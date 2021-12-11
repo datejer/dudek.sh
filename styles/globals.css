@@ -44,3 +44,25 @@ a[textlink]:hover {
 * {
 	box-sizing: border-box;
 }
+
+::-moz-selection {
+	background: var(--foreground-secondary);
+}
+
+::selection {
+	background: var(--foreground-secondary);
+}
+
+::-webkit-scrollbar {
+	width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--foreground-secondary);
+	border-radius: 1rem;
+	border: 0.4rem solid var(--background);
+}
