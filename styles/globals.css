@@ -1,16 +1,46 @@
+:root {
+	--background: #fff;
+	--foreground: #000;
+	--foreground-secondary: #00000044;
+	--button-border: #00000022;
+}
+
+[data-theme='dark'] {
+	--background: #111;
+	--foreground: #eee;
+	--foreground-secondary: #eeeeee44;
+	--button-border: #ffffff22;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: var(--foreground);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+a[textlink] {
+	background: linear-gradient(
+		to bottom,
+		var(--foreground-secondary) 0%,
+		var(--foreground-secondary) 100%
+	);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	transition: background-size 0.3s;
+}
+
+a[textlink]:hover {
+	background-size: 2px 1.2rem;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }

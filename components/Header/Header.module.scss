@@ -1,0 +1,11 @@
+.container {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin: 1rem 0;
+}
+
+.left {
+	display: inline-flex;
+	gap: 0.5rem;
+}

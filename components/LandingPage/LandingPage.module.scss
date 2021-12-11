@@ -1,0 +1,36 @@
+$mobileSize: 600px;
+
+.hero {
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: row;
+
+	.name {
+		font-family: 'IBM Plex Mono', monospace;
+		margin: 0;
+	}
+
+	.position {
+		font-family: 'IBM Plex Mono', monospace;
+		color: var(--foreground-secondary);
+		font-weight: 400;
+		font-size: 1rem;
+		margin-top: 0;
+	}
+
+	.picture {
+		margin-left: 2rem;
+
+		.img {
+			border-radius: 50%;
+		}
+	}
+
+	@media screen and (max-width: $mobileSize) {
+		flex-direction: column-reverse;
+
+		.picture {
+			margin: 0;
+		}
+	}
+}
