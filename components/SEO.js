@@ -5,7 +5,7 @@ export default function SEO({ title, description, image, bigImage }) {
 
 	const fullDescription = description || 'full stack dev.';
 
-	const fullImage = image || '/me.png';
+	const fullImage = image || '/me.jpg';
 
 	return (
 		<Head>
@@ -32,7 +32,7 @@ export default function SEO({ title, description, image, bigImage }) {
 			<meta property="twitter:description" content={fullDescription} />
 			<meta property="twitter:image" content={fullImage} />
 
-			<meta property="og:site_name" content="artur dudek." />
+			<meta property="og:site_name" content="dudek.ga" />
 			<meta name="theme-color" content="#ffffff" />
 		</Head>
 	);
