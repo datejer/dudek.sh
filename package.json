@@ -13,6 +13,7 @@
     "next-themes": "^0.0.15",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-tilty": "^2.0.3",
     "sass": "^1.45.0"
   }
 }
