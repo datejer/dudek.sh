@@ -26,6 +26,75 @@ $mobileSize: 600px;
 		}
 	}
 
+	.link {
+		display: inline-block;
+		height: 42px;
+		padding: 0.5rem;
+		margin-right: 0.5rem;
+		border: 1px solid var(--foreground);
+		border-radius: 0.5rem;
+		position: relative;
+		overflow: hidden;
+
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: var(--foreground);
+			border-radius: 100%;
+			transform: scale(0);
+			transition-property: transform;
+			transition: 0.3s ease-out;
+		}
+
+		&:hover:before {
+			transform: scale(2);
+		}
+
+		svg {
+			fill: var(--foreground);
+			height: 24px;
+
+			path {
+				transition: fill 0.3s ease;
+			}
+		}
+	}
+
+	.gh {
+		border-color: var(--foreground);
+
+		&:hover {
+			svg {
+				fill: var(--background);
+			}
+		}
+
+		&:before {
+			background: var(--foreground);
+		}
+	}
+
+	.tw {
+		border-color: #1da1f2;
+
+		&:before {
+			background: #1da1f2;
+		}
+	}
+
+	.li {
+		border-color: #0a66c2;
+
+		&:before {
+			background: #0a66c2;
+		}
+	}
+
 	@media screen and (max-width: $mobileSize) {
 		flex-direction: column-reverse;
 		padding: 0 1rem;

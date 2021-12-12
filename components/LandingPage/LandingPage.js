@@ -2,7 +2,11 @@ import Image from 'next/image';
 import SEO from '../SEO';
 
 import styles from './LandingPage.module.scss';
+
 import me from '../../public/me.jpg';
+import GitHub from '../../assets/icons/github.svg';
+import Twitter from '../../assets/icons/twitter.svg';
+import LinkedIn from '../../assets/icons/linkedin.svg';
 
 export default function LandingPage() {
 	return (
@@ -22,6 +26,21 @@ export default function LandingPage() {
 						</a>
 						.
 					</p>
+					<a
+						href="https://github.com/datejer"
+						className={`${styles.link} ${styles.gh}`}
+					>
+						<GitHub />
+					</a>
+					<a
+						href="https://twitter.com/arturdudek_"
+						className={`${styles.link} ${styles.tw}`}
+					>
+						<Twitter />
+					</a>
+					<a href="/linkedin" className={`${styles.link} ${styles.li}`}>
+						<LinkedIn />
+					</a>
 				</div>
 				<div className={styles.picture}>
 					<Image
