@@ -4,6 +4,7 @@
 	border-radius: 0.5rem;
 	font-family: 'IBM Plex Mono', monospace;
 	border: 2px solid transparent;
+	transition: border 0.2s ease;
 
 	&:hover {
 		cursor: pointer;

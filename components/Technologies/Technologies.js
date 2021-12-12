@@ -14,56 +14,42 @@ export default function Technologies() {
 		<div className={styles.technologies}>
 			<a
 				href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-				target="_blank"
 				className={`${styles.tech} ${styles.js}`}
 			>
 				<JavaScript />
 			</a>
-			<a
-				href="https://nodejs.org/"
-				target="_blank"
-				className={`${styles.tech} ${styles.node}`}
-			>
+			<a href="https://nodejs.org/" className={`${styles.tech} ${styles.node}`}>
 				<Node />
 			</a>
 			<a
 				href="https://reactjs.org/"
-				target="_blank"
 				className={`${styles.tech} ${styles.react}`}
 			>
 				<React />
 			</a>
-			<a
-				href="https://nextjs.org/"
-				target="_blank"
-				className={`${styles.tech} ${styles.next}`}
-			>
+			<a href="https://nextjs.org/" className={`${styles.tech} ${styles.next}`}>
 				<Next />
 			</a>
 			<a
 				href="https://gatsbyjs.org/"
-				target="_blank"
 				className={`${styles.tech} ${styles.gatsby}`}
 			>
 				<Gatsby />
 			</a>
 			<a
 				href="https://sass-lang.com/"
-				target="_blank"
 				className={`${styles.tech} ${styles.sass}`}
 			>
 				<Sass />
 			</a>
 			<a
 				href="https://www.mongodb.com/"
-				target="_blank"
 				className={`${styles.tech} ${styles.mongo}`}
 			>
 				<MongoDB />
 			</a>
 			<a
 				href="https://discord.js.org/"
-				target="_blank"
 				className={`${styles.tech} ${styles.discord}`}
 			>
 				<Discord />

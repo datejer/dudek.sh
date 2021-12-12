@@ -19,7 +19,7 @@ export default function PinnedRepos() {
 			{pinned.map((repo, index) => (
 				<div className={styles.repoWrapper}>
 					<Tilty style={{ height: '100%' }}>
-						<a href={repo.link} target="_blank">
+						<a href={repo.link}>
 							<div
 								key={index}
 								className={styles.repo}
