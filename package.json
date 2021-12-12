@@ -15,5 +15,8 @@
     "react-dom": "17.0.2",
     "react-tilty": "^2.0.3",
     "sass": "^1.45.0"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^2.0.1"
   }
 }

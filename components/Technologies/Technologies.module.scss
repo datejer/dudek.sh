@@ -1,0 +1,114 @@
+.technologies {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.tech {
+		display: inline-block;
+		height: 68px;
+		padding: 0.5rem;
+		margin: 0.5rem;
+		border: 2px solid var(--foreground);
+		border-radius: 0.75rem;
+		position: relative;
+		overflow: hidden;
+
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: var(--foreground);
+			border-radius: 100%;
+			transform: scale(0);
+			transition-property: transform;
+			transition: 0.3s ease-out;
+		}
+
+		&:hover:before {
+			transform: scale(2);
+		}
+
+		svg {
+			fill: var(--foreground);
+			height: 48px;
+		}
+	}
+
+	.js {
+		border-color: #f7df1e;
+
+		&:before {
+			background: #f7df1e;
+		}
+	}
+
+	.node {
+		border-color: #339933;
+
+		&:before {
+			background: #339933;
+		}
+	}
+
+	.react {
+		border-color: #61dafb;
+
+		&:before {
+			background: #61dafb;
+		}
+	}
+
+	.next {
+		border-color: var(--foreground);
+
+		svg path {
+			transition: fill 0.3s ease;
+		}
+
+		&:hover {
+			svg {
+				fill: var(--background);
+			}
+		}
+
+		&:before {
+			background: var(--foreground);
+		}
+	}
+
+	.gatsby {
+		border-color: #663399;
+
+		&:before {
+			background: #663399;
+		}
+	}
+
+	.sass {
+		border-color: #cc6699;
+
+		&:before {
+			background: #cc6699;
+		}
+	}
+
+	.mongo {
+		border-color: #47a248;
+
+		&:before {
+			background: #47a248;
+		}
+	}
+
+	.discord {
+		border-color: #5865f2;
+
+		&:before {
+			background: #5865f2;
+		}
+	}
+}
