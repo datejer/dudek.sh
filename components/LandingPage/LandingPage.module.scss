@@ -28,6 +28,7 @@ $mobileSize: 600px;
 
 	@media screen and (max-width: $mobileSize) {
 		flex-direction: column-reverse;
+		padding: 0 1rem;
 
 		.picture {
 			margin: 0;
