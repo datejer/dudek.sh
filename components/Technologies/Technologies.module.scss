@@ -35,11 +35,21 @@
 		svg {
 			fill: var(--foreground);
 			height: 48px;
+
+			path {
+				transition: fill 0.3s ease;
+			}
 		}
 	}
 
 	.js {
 		border-color: #f7df1e;
+
+		&:hover {
+			svg {
+				fill: var(--background);
+			}
+		}
 
 		&:before {
 			background: #f7df1e;
@@ -64,10 +74,6 @@
 
 	.next {
 		border-color: var(--foreground);
-
-		svg path {
-			transition: fill 0.3s ease;
-		}
 
 		&:hover {
 			svg {
