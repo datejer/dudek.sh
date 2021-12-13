@@ -59,6 +59,12 @@
 	.node {
 		border-color: #339933;
 
+		&:hover {
+			svg {
+				fill: #ffffff;
+			}
+		}
+
 		&:before {
 			background: #339933;
 		}
@@ -89,6 +95,12 @@
 	.gatsby {
 		border-color: #663399;
 
+		&:hover {
+			svg {
+				fill: #ffffff;
+			}
+		}
+
 		&:before {
 			background: #663399;
 		}
@@ -96,6 +108,12 @@
 
 	.sass {
 		border-color: #cc6699;
+
+		&:hover {
+			svg {
+				fill: #ffffff;
+			}
+		}
 
 		&:before {
 			background: #cc6699;
@@ -105,6 +123,12 @@
 	.mongo {
 		border-color: #47a248;
 
+		&:hover {
+			svg {
+				fill: #ffffff;
+			}
+		}
+
 		&:before {
 			background: #47a248;
 		}
@@ -112,6 +136,12 @@
 
 	.discord {
 		border-color: #5865f2;
+
+		&:hover {
+			svg {
+				fill: #ffffff;
+			}
+		}
 
 		&:before {
 			background: #5865f2;

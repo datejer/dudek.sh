@@ -17,17 +17,13 @@ export default function PinnedRepos() {
 	return (
 		<div className={styles.pinned}>
 			{pinned.map((repo, index) => (
-				<div className={styles.repoWrapper}>
+				<div key={repo.repo || index} className={styles.repoWrapper}>
 					<Tilty
 						style={{ height: '100%', borderRadius: '0.75rem' }}
 						gyroscope={false}
 					>
 						<a href={repo.link}>
-							<div
-								key={index}
-								className={styles.repo}
-								style={{ borderColor: repo.color }}
-							>
+							<div className={styles.repo} style={{ borderColor: repo.color }}>
 								<h2 className={styles.repoName}>
 									{repo.owner}/{repo.repo}
 								</h2>
