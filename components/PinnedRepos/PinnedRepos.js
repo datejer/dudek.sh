@@ -18,7 +18,10 @@ export default function PinnedRepos() {
 		<div className={styles.pinned}>
 			{pinned.map((repo, index) => (
 				<div className={styles.repoWrapper}>
-					<Tilty style={{ height: '100%' }}>
+					<Tilty
+						style={{ height: '100%', borderRadius: '0.75rem' }}
+						gyroscope={false}
+					>
 						<a href={repo.link}>
 							<div
 								key={index}
