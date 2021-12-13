@@ -1,14 +1,16 @@
 :root {
 	--background: #fff;
 	--foreground: #000;
-	--foreground-secondary: #00000044;
+	--foreground-secondary: #000000aa;
+	--foreground-tertiary: #00000044;
 	--button-border: #00000022;
 }
 
 [data-theme='dark'] {
 	--background: #111;
 	--foreground: #eee;
-	--foreground-secondary: #eeeeee44;
+	--foreground-secondary: #eeeeee88;
+	--foreground-tertiary: #eeeeee44;
 	--button-border: #ffffff22;
 }
 
@@ -28,8 +30,8 @@ a {
 a[textlink] {
 	background: linear-gradient(
 		to bottom,
-		var(--foreground-secondary) 0%,
-		var(--foreground-secondary) 100%
+		var(--foreground-tertiary) 0%,
+		var(--foreground-tertiary) 100%
 	);
 	background-position: 0 100%;
 	background-repeat: repeat-x;
@@ -46,11 +48,11 @@ a[textlink]:hover {
 }
 
 ::-moz-selection {
-	background: var(--foreground-secondary);
+	background: var(--foreground-tertiary);
 }
 
 ::selection {
-	background: var(--foreground-secondary);
+	background: var(--foreground-tertiary);
 }
 
 ::-webkit-scrollbar {
@@ -62,7 +64,7 @@ a[textlink]:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--foreground-secondary);
+	background: var(--foreground-tertiary);
 	border-radius: 1rem;
 	border: 0.4rem solid var(--background);
 }
