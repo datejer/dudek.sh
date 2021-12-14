@@ -7,6 +7,7 @@ import me from '../../public/me.jpg';
 import GitHub from '../../assets/icons/github.svg';
 import Twitter from '../../assets/icons/twitter.svg';
 import LinkedIn from '../../assets/icons/linkedin.svg';
+import At from '../../assets/icons/at.svg';
 
 export default function LandingPage() {
 	return (
@@ -40,6 +41,12 @@ export default function LandingPage() {
 					</a>
 					<a href="/linkedin" className={`${styles.link} ${styles.li}`}>
 						<LinkedIn />
+					</a>
+					<a
+						href="mailto:artur@dudek.ga"
+						className={`${styles.link} ${styles.gh}`}
+					>
+						<At />
 					</a>
 				</div>
 				<div className={styles.picture}>
