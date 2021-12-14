@@ -49,7 +49,9 @@ export default function PinnedRepos() {
 									<div className={styles.repoStats}>
 										<div>
 											⭐{' '}
-											{repo.stars || (
+											{repo.stars !== undefined ? (
+												repo.stars
+											) : (
 												<span style={{ fontFamily: 'NorumIpnum' }}>
 													{Math.floor(Math.random() * 99)}
 												</span>
@@ -57,7 +59,9 @@ export default function PinnedRepos() {
 										</div>
 										<div>
 											🍴{' '}
-											{repo.forks || (
+											{repo.forks !== undefined ? (
+												repo.forks
+											) : (
 												<span style={{ fontFamily: 'NorumIpnum' }}>
 													{Math.floor(Math.random() * 99)}
 												</span>
