@@ -14,6 +14,14 @@
 	--button-border: #ffffff22;
 }
 
+@font-face {
+	font-family: 'NorumIpnum';
+	src: url('/fonts/NorumIpnumSegment-Regular.otf');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
 html,
 body {
 	padding: 0;
