@@ -1,5 +1,6 @@
 import Image from "next/image";
-import SEO from "../SEO";
+import clsx from "clsx";
+import { SEO } from "../SEO";
 
 import styles from "./LandingPage.module.scss";
 
@@ -9,14 +10,14 @@ import Twitter from "../../assets/icons/twitter.svg";
 import LinkedIn from "../../assets/icons/linkedin.svg";
 import At from "../../assets/icons/at.svg";
 
-export default function LandingPage() {
+export function LandingPage() {
 	return (
 		<div>
 			<SEO />
 			<div className={styles.hero}>
 				<div>
 					<h1 className={styles.name}>artur dudek</h1>
-					<h2 className={styles.position}>full stack dev</h2>
+					<p className={styles.position}>full stack dev</p>
 					<p>
 						Hello 👋! <br />
 						I'm a 16 year old web developer from Poland 🇵🇱. I'm currently
@@ -29,30 +30,42 @@ export default function LandingPage() {
 					</p>
 					<a
 						href="https://github.com/datejer"
-						className={`${styles.link} ${styles.gh}`}
+						className={clsx(styles.link, styles.gh)}
 					>
-						<GitHub />
+						<span data-visually-hidden>My GitHub Profile</span>
+						<span aria-hidden="true">
+							<GitHub />
+						</span>
 					</a>
 					<a
 						href="https://twitter.com/arturdudek_"
-						className={`${styles.link} ${styles.tw}`}
+						className={clsx(styles.link, styles.tw)}
 					>
-						<Twitter />
+						<span data-visually-hidden>My Twitter Profile</span>
+						<span aria-hidden="true">
+							<Twitter />
+						</span>
 					</a>
-					<a href="/linkedin" className={`${styles.link} ${styles.li}`}>
-						<LinkedIn />
+					<a href="/linkedin" className={clsx(styles.link, styles.li)}>
+						<span data-visually-hidden>My LinkedIn Profile</span>
+						<span aria-hidden="true">
+							<LinkedIn />
+						</span>
 					</a>
 					<a
 						href="mailto:artur@dudek.ga"
-						className={`${styles.link} ${styles.gh}`}
+						className={clsx(styles.link, styles.gh)}
 					>
-						<At />
+						<span data-visually-hidden>Send me an email!</span>
+						<span aria-hidden="true">
+							<At />
+						</span>
 					</a>
 				</div>
 				<div className={styles.picture}>
 					<Image
 						src={me}
-						alt="picture of my face."
+						alt="Blurry face of Artur Dudek"
 						width={128}
 						height={128}
 						priority

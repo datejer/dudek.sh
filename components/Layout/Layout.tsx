@@ -1,14 +1,14 @@
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import { Header } from "../Header/Header";
+import { Footer } from "../Footer/Footer";
 
 import styles from "./Layout.module.scss";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.container}>
 				<Header />
-				<main>{children}</main>
+				<main className={styles.main}>{children}</main>
 				<Footer />
 			</div>
 		</div>

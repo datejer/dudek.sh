@@ -1,17 +1,18 @@
-import SEO from '../SEO';
-import PinnedRepos from '../PinnedRepos/PinnedRepos';
-import Technologies from '../Technologies/Technologies';
+import clsx from "clsx";
+import { SEO } from "../SEO";
+import { PinnedRepos } from "../PinnedRepos/PinnedRepos";
+import { Technologies } from "../Technologies/Technologies";
 
-import styles from './StuffPage.module.scss';
+import styles from "./StuffPage.module.scss";
 
-import Require from '../../assets/icons/require.svg';
+import Require from "../../assets/icons/require.svg";
 
-export default function StuffPage() {
+export function StuffPage() {
 	return (
 		<div>
 			<SEO title="stuff" description="stuff i made" />
 			<a href="https://require.podcast.gq">
-				<div className={styles.project} style={{ borderColor: '#ff5370' }}>
+				<div className={clsx(styles.project, styles.require)}>
 					<div>
 						<h2 className={styles.projectName}>Require Podcast</h2>
 						<p className={styles.projectDesc}>
@@ -26,11 +27,11 @@ export default function StuffPage() {
 				</div>
 			</a>
 			<div>
-				<h1 className={styles.title}>stuff i made.</h1>
+				<h2 className={styles.title}>stuff i made.</h2>
 				<PinnedRepos />
 			</div>
 			<div>
-				<h1 className={styles.title}>stuff i know.</h1>
+				<h2 className={styles.title}>stuff i know.</h2>
 				<Technologies />
 			</div>
 		</div>

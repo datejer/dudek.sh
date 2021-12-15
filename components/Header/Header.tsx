@@ -1,43 +1,61 @@
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import Button from '../Button/Button';
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 
-import styles from './Header.module.scss';
+import styles from "./Header.module.scss";
 
-export default function Header() {
+export function Header() {
 	const { theme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => setMounted(true), []);
 
+	const handleThemeChange = () => {
+		theme === "dark" ? setTheme("light") : setTheme("dark");
+	};
+
 	return (
 		<nav className={styles.container}>
-			<div className={styles.left}>
-				<Link href="/" passHref>
-					<Button>/</Button>
-				</Link>
-				<Link href="/stuff">
-					<Button>/stuff</Button>
-				</Link>
-				<Link href="/uses">
-					<Button>/uses</Button>
-				</Link>
-			</div>
-			<div className={styles.right}>
-				{mounted ? (
-					<Button
-						style={{ padding: '0.5rem' }}
-						onClick={() =>
-							theme === 'dark' ? setTheme('light') : setTheme('dark')
-						}
-					>
-						{theme === 'dark' ? '🌞' : '🌙'}
-					</Button>
-				) : (
-					<Button style={{ padding: '0.5rem' }}>🌙</Button>
-				)}
-			</div>
+			<ul className={styles.list}>
+				<li>
+					<Link href="/">
+						<a className={styles.button}>
+							<span data-visually-hidden>Main page</span>
+							<span aria-hidden="true">/</span>
+						</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/stuff">
+						<a className={styles.button}>/stuff</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/uses">
+						<a className={styles.button}>/uses</a>
+					</Link>
+				</li>
+			</ul>
+			<ul className={styles.list}>
+				<li>
+					{mounted ? (
+						<button
+							aria-pressed={theme === "dark"}
+							className={styles.themeSwitch}
+							onClick={handleThemeChange}
+						>
+							<span aria-hidden="true">{theme === "dark" ? "🌞" : "🌙"}</span>
+							<span data-visually-hidden>
+								{theme === "dark"
+									? "Dark theme enabled"
+									: "White theme enabled"}
+							</span>
+						</button>
+					) : (
+						<button className={styles.themeSwitch}>🌞</button>
+					)}
+				</li>
+			</ul>
 		</nav>
 	);
 }

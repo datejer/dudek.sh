@@ -2,13 +2,14 @@ import { ThemeProvider } from "next-themes";
 import "../styles/globals.css";
 import "react-loading-skeleton/dist/skeleton.css";
 import { AppProps } from "next/app";
+import { Layout } from "../components/Layout/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider defaultTheme="dark">
-			<div style={{ minHeight: "100vh" }}>
+			<Layout>
 				<Component {...pageProps} />
-			</div>
+			</Layout>
 		</ThemeProvider>
 	);
 }

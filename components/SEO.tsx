@@ -7,7 +7,7 @@ type SEOProps = {
 	bigImage?: boolean;
 };
 
-export default function SEO({ title, description, image, bigImage }: SEOProps) {
+export function SEO({ title, description, image, bigImage }: SEOProps) {
 	const fullTitle = title ? `${title} @ artur dudek.` : "artur dudek.";
 
 	const fullDescription = description || "full stack dev.";

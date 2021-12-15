@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import styles from "./Technologies.module.scss";
 
 import JavaScript from "../../assets/icons/javascript.svg";
@@ -9,50 +11,74 @@ import Sass from "../../assets/icons/sass.svg";
 import MongoDB from "../../assets/icons/mongodb.svg";
 import Discord from "../../assets/icons/discord.svg";
 
-export default function Technologies() {
+export function Technologies() {
 	return (
 		<div className={styles.technologies}>
 			<a
 				href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-				className={`${styles.tech} ${styles.js}`}
+				className={clsx(styles.tech, styles.js)}
 			>
-				<JavaScript />
+				<span data-visually-hidden>JavaScript</span>
+				<span aria-hidden="true">
+					<JavaScript />
+				</span>
 			</a>
-			<a href="https://nodejs.org/" className={`${styles.tech} ${styles.node}`}>
-				<Node />
+			<a href="https://nodejs.org/" className={clsx(styles.tech, styles.node)}>
+				<span data-visually-hidden>Node.js</span>
+				<span aria-hidden="true">
+					<Node />
+				</span>
 			</a>
 			<a
 				href="https://reactjs.org/"
-				className={`${styles.tech} ${styles.react}`}
+				className={clsx(styles.tech, styles.react)}
 			>
-				<React />
+				<span data-visually-hidden>React.js</span>
+				<span aria-hidden="true">
+					<React />
+				</span>
 			</a>
-			<a href="https://nextjs.org/" className={`${styles.tech} ${styles.next}`}>
-				<Next />
+			<a href="https://nextjs.org/" className={clsx(styles.tech, styles.next)}>
+				<span data-visually-hidden>Next.js</span>
+				<span aria-hidden="true">
+					<Next />
+				</span>
 			</a>
 			<a
 				href="https://gatsbyjs.org/"
-				className={`${styles.tech} ${styles.gatsby}`}
+				className={clsx(styles.tech, styles.gatsby)}
 			>
-				<Gatsby />
+				<span data-visually-hidden>Gatsby.js</span>
+				<span aria-hidden="true">
+					<Gatsby />
+				</span>
 			</a>
 			<a
 				href="https://sass-lang.com/"
-				className={`${styles.tech} ${styles.sass}`}
+				className={clsx(styles.tech, styles.sass)}
 			>
-				<Sass />
+				<span data-visually-hidden>Sass and SCSS</span>
+				<span aria-hidden="true">
+					<Sass />
+				</span>
 			</a>
 			<a
 				href="https://www.mongodb.com/"
-				className={`${styles.tech} ${styles.mongo}`}
+				className={clsx(styles.tech, styles.mongo)}
 			>
-				<MongoDB />
+				<span data-visually-hidden>MongoDB</span>
+				<span aria-hidden="true">
+					<MongoDB />
+				</span>
 			</a>
 			<a
 				href="https://discord.js.org/"
-				className={`${styles.tech} ${styles.discord}`}
+				className={clsx(styles.tech, styles.discord)}
 			>
-				<Discord />
+				<span data-visually-hidden>Discord.js</span>
+				<span aria-hidden="true">
+					<Discord />
+				</span>
 			</a>
 		</div>
 	);

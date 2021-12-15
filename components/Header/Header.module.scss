@@ -1,3 +1,17 @@
+@mixin button {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	font-family: "IBM Plex Mono", monospace;
+	border: 2px solid transparent;
+	transition: border 0.2s ease;
+
+	&:hover {
+		cursor: pointer;
+		border: 2px solid var(--button-border);
+	}
+}
+
 .container {
 	width: 100%;
 	display: inline-flex;
@@ -5,7 +19,22 @@
 	margin: 1rem 0;
 }
 
-.left {
-	display: inline-flex;
-	gap: 0.5rem;
+.list {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	grid-gap: 0.5rem;
+}
+
+.button {
+	@include button;
+}
+
+.themeSwitch {
+	@include button;
+
+	padding: 0.5rem;
+	background: none;
+	font-size: inherit;
 }

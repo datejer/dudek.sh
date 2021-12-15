@@ -1,7 +1,7 @@
 $mobileSize: 400px;
 
 .title {
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: "IBM Plex Mono", monospace;
 }
 
 .project {
@@ -15,24 +15,6 @@ $mobileSize: 400px;
 
 	&:hover {
 		transform: scale(1.05);
-
-		// svg {
-		// 	transform: rotate(360deg);
-		// }
-	}
-
-	.projectName {
-		margin: 0;
-		font-size: 1.5rem;
-		font-family: 'IBM Plex Mono', monospace;
-	}
-
-	.projectDesc {
-		margin: 0.25rem 0;
-		font-size: 1rem;
-		flex: 1;
-		color: var(--foreground-secondary);
-		text-align: justify;
 	}
 
 	svg {
@@ -48,4 +30,22 @@ $mobileSize: 400px;
 			margin: 0;
 		}
 	}
+}
+
+.projectName {
+	margin: 0;
+	font-size: 1.5rem;
+	font-family: "IBM Plex Mono", monospace;
+}
+
+.projectDesc {
+	margin: 0.25rem 0;
+	font-size: 1rem;
+	flex: 1;
+	color: var(--foreground-secondary);
+	text-align: justify;
+}
+
+.require {
+	border-color: #ff5370;
 }
