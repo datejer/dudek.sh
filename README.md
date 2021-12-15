@@ -1,6 +1,9 @@
 <div>
   <img align="right" style="margin: 0 0 0 1rem;"  src="./public/me.jpg" width="150" />
   <h1>artur dudek.</h1>
+  
+  ![Vercel](https://vercelbadge.vercel.app/api/datejer/dudek.ga)
+  
   Hello 👋!
   
   I'm a 16 year old web developer from Poland 🇵🇱. I'm currently studying at a High School, and enjoy making websites in React! I'm also the Host of Require Podcast.
@@ -19,13 +22,10 @@
 ## develop.
 
 ```bash
-npm run dev
-```
-
-## build.
-
-```bash
-npm run build
+$ git clone https://github.com/datejer/dudek.ga.git
+$ cd dudek.ga
+$ npm i
+$ npm run dev
 ```
 
 ## deploy.
