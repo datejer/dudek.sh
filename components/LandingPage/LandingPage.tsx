@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import SEO from '../SEO';
+import Image from "next/image";
+import SEO from "../SEO";
 
-import styles from './LandingPage.module.scss';
+import styles from "./LandingPage.module.scss";
 
-import me from '../../public/me.jpg';
-import GitHub from '../../assets/icons/github.svg';
-import Twitter from '../../assets/icons/twitter.svg';
-import LinkedIn from '../../assets/icons/linkedin.svg';
-import At from '../../assets/icons/at.svg';
+import me from "../../public/me.jpg";
+import GitHub from "../../assets/icons/github.svg";
+import Twitter from "../../assets/icons/twitter.svg";
+import LinkedIn from "../../assets/icons/linkedin.svg";
+import At from "../../assets/icons/at.svg";
 
 export default function LandingPage() {
 	return (
@@ -21,8 +21,8 @@ export default function LandingPage() {
 						Hello 👋! <br />
 						I'm a 16 year old web developer from Poland 🇵🇱. I'm currently
 						studying at a High School, and enjoy making websites in React! I'm
-						also the Host of{' '}
-						<a href="https://require.podcast.gq/" textlink="true">
+						also the Host of{" "}
+						<a href="https://require.podcast.gq/" data-textlink="true">
 							Require Podcast
 						</a>
 						.

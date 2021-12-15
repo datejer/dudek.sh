@@ -1,6 +1,6 @@
-import SEO from '../SEO';
+import SEO from "../SEO";
 
-import styles from './UsesPage.module.scss';
+import styles from "./UsesPage.module.scss";
 
 export default function UsesPage() {
 	return (
@@ -8,8 +8,8 @@ export default function UsesPage() {
 			<SEO title="uses" description="stuff i use" />
 			<h1 className={styles.title}>stuff i use.</h1>
 			<p>
-				Inspired by Wes Bos'{' '}
-				<a href="https://uses.tech/" textlink="true">
+				Inspired by Wes Bos'{" "}
+				<a href="https://uses.tech/" data-textlink="true">
 					uses.tech
 				</a>
 			</p>

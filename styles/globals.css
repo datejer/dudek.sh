@@ -6,7 +6,7 @@
 	--button-border: #00000022;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
 	--background: #111;
 	--foreground: #eee;
 	--foreground-secondary: #eeeeee88;
@@ -15,8 +15,8 @@
 }
 
 @font-face {
-	font-family: 'NorumIpnum';
-	src: url('/fonts/NorumIpnumSegment-Regular.otf');
+	font-family: "NorumIpnum";
+	src: url("/fonts/NorumIpnumSegment-Regular.otf");
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
@@ -26,7 +26,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: "IBM Plex Sans", sans-serif;
 	color: var(--foreground);
 }
 
@@ -35,7 +35,7 @@ a {
 	text-decoration: none;
 }
 
-a[textlink] {
+a[data-textlink] {
 	background: linear-gradient(
 		to bottom,
 		var(--foreground-tertiary) 0%,
@@ -47,7 +47,7 @@ a[textlink] {
 	transition: background-size 0.3s;
 }
 
-a[textlink]:hover {
+a[data-textlink]:hover {
 	background-size: 2px 1.2rem;
 }
 

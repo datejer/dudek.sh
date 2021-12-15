@@ -1,13 +1,13 @@
-import styles from './Technologies.module.scss';
+import styles from "./Technologies.module.scss";
 
-import JavaScript from '../../assets/icons/javascript.svg';
-import Node from '../../assets/icons/nodedotjs.svg';
-import React from '../../assets/icons/react.svg';
-import Next from '../../assets/icons/nextdotjs.svg';
-import Gatsby from '../../assets/icons/gatsby.svg';
-import Sass from '../../assets/icons/sass.svg';
-import MongoDB from '../../assets/icons/mongodb.svg';
-import Discord from '../../assets/icons/discord.svg';
+import JavaScript from "../../assets/icons/javascript.svg";
+import Node from "../../assets/icons/nodedotjs.svg";
+import React from "../../assets/icons/react.svg";
+import Next from "../../assets/icons/nextdotjs.svg";
+import Gatsby from "../../assets/icons/gatsby.svg";
+import Sass from "../../assets/icons/sass.svg";
+import MongoDB from "../../assets/icons/mongodb.svg";
+import Discord from "../../assets/icons/discord.svg";
 
 export default function Technologies() {
 	return (

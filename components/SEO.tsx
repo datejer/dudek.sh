@@ -1,11 +1,18 @@
-import Head from 'next/head';
+import Head from "next/head";
 
-export default function SEO({ title, description, image, bigImage }) {
-	const fullTitle = title ? `${title} @ artur dudek.` : 'artur dudek.';
+type SEOProps = {
+	title?: string;
+	description?: string;
+	image?: string;
+	bigImage?: boolean;
+};
 
-	const fullDescription = description || 'full stack dev.';
+export default function SEO({ title, description, image, bigImage }: SEOProps) {
+	const fullTitle = title ? `${title} @ artur dudek.` : "artur dudek.";
 
-	const fullImage = image || '/me.jpg';
+	const fullDescription = description || "full stack dev.";
+
+	const fullImage = image || "/me.jpg";
 
 	return (
 		<Head>
@@ -24,7 +31,7 @@ export default function SEO({ title, description, image, bigImage }) {
 			{bigImage ? (
 				<meta property="twitter:card" content="summary_large_image" />
 			) : (
-				''
+				""
 			)}
 			<meta property="twitter:url" content="https://dudek.ga/" />
 			<meta property="twitter:domain" content="dudek.ga" />
