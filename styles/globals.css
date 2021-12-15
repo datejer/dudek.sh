@@ -8,9 +8,9 @@
 
 [data-theme="dark"] {
 	--background: #111;
-	--foreground: #eee;
-	--foreground-secondary: #eeeeee88;
-	--foreground-tertiary: #eeeeee44;
+	--foreground: #fff;
+	--foreground-secondary: #ffffff88;
+	--foreground-tertiary: #ffffff44;
 	--button-border: #ffffff22;
 }
 
