@@ -17,7 +17,7 @@ export function SEO({ title, description, image, bigImage }: SEOProps) {
   return (
     <Head>
       <title>{fullTitle}</title>
-      <link rel="icon" href="/favicon.jpg" />
+      <link rel="icon" href="/favicon.png" />
 
       <meta name="title" content={title || fullTitle} />
       <meta name="description" content={fullDescription} />
