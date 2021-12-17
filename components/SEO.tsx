@@ -37,6 +37,9 @@ export function SEO({ title, description, image, bigImage }: SEOProps) {
 
       <meta property="og:site_name" content="dudek.ga" />
       <meta name="theme-color" content="#ffffff" />
+
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
     </Head>
   );
 }
