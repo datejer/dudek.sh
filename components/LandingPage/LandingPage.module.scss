@@ -1,118 +1,118 @@
 $mobileSize: 600px;
 
 .hero {
-	margin-top: 4rem;
-	display: flex;
-	flex-direction: row;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
 
-	@media screen and (max-width: $mobileSize) {
-		flex-direction: column-reverse;
-		padding: 0 1rem;
+  @media screen and (max-width: $mobileSize) {
+    flex-direction: column-reverse;
+    padding: 0 1rem;
 
-		.picture {
-			margin: 0;
-		}
-	}
+    .picture {
+      margin: 0;
+    }
+  }
 }
 
 .name {
-	font-family: "IBM Plex Mono", monospace;
-	margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0;
 }
 
 .position {
-	font-family: "IBM Plex Mono", monospace;
-	color: var(--foreground-secondary);
-	font-weight: 400;
-	font-size: 1rem;
-	margin-top: 0;
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--foreground-secondary);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0;
 }
 
 .picture {
-	margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .img {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .link {
-	display: inline-block;
-	height: 42px;
-	padding: 0.5rem;
-	margin-right: 0.5rem;
-	border: 1px solid var(--foreground);
-	border-radius: 0.5rem;
-	position: relative;
-	overflow: hidden;
+  display: inline-block;
+  height: 42px;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--foreground);
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
 
-	&:before {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: var(--foreground);
-		border-radius: 100%;
-		transform: scale(0);
-		transition-property: transform;
-		transition: 0.3s ease-out;
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--foreground);
+    border-radius: 100%;
+    transform: scale(0);
+    transition-property: transform;
+    transition: 0.3s ease-out;
+  }
 
-	&:hover:before {
-		transform: scale(2);
-	}
+  &:hover:before {
+    transform: scale(2);
+  }
 
-	svg {
-		fill: var(--foreground);
-		height: 24px;
+  svg {
+    fill: var(--foreground);
+    height: 24px;
 
-		path {
-			transition: fill 0.3s ease;
-		}
-	}
+    path {
+      transition: fill 0.3s ease;
+    }
+  }
 }
 
 .gh {
-	border-color: var(--foreground);
+  border-color: var(--foreground);
 
-	&:hover {
-		svg {
-			fill: var(--background);
-		}
-	}
+  &:hover {
+    svg {
+      fill: var(--background);
+    }
+  }
 
-	&:before {
-		background: var(--foreground);
-	}
+  &:before {
+    background: var(--foreground);
+  }
 }
 
 .tw {
-	border-color: #1da1f2;
+  border-color: #1da1f2;
 
-	&:hover {
-		svg {
-			fill: #ffffff;
-		}
-	}
+  &:hover {
+    svg {
+      fill: #ffffff;
+    }
+  }
 
-	&:before {
-		background: #1da1f2;
-	}
+  &:before {
+    background: #1da1f2;
+  }
 }
 
 .li {
-	border-color: #0a66c2;
+  border-color: #0a66c2;
 
-	&:hover {
-		svg {
-			fill: #ffffff;
-		}
-	}
+  &:hover {
+    svg {
+      fill: #ffffff;
+    }
+  }
 
-	&:before {
-		background: #0a66c2;
-	}
+  &:before {
+    background: #0a66c2;
+  }
 }

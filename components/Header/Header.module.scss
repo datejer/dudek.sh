@@ -1,40 +1,40 @@
 @mixin button {
-	display: inline-block;
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
-	font-family: "IBM Plex Mono", monospace;
-	border: 2px solid transparent;
-	transition: border 0.2s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
 
-	&:hover {
-		cursor: pointer;
-		border: 2px solid var(--button-border);
-	}
+  &:hover {
+    cursor: pointer;
+    border: 2px solid var(--button-border);
+  }
 }
 
 .container {
-	width: 100%;
-	display: inline-flex;
-	justify-content: space-between;
-	margin: 1rem 0;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 1rem 0;
 }
 
 .list {
-	display: flex;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	grid-gap: 0.5rem;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  grid-gap: 0.5rem;
 }
 
 .button {
-	@include button;
+  @include button;
 }
 
 .themeSwitch {
-	@include button;
+  @include button;
 
-	padding: 0.5rem;
-	background: none;
-	font-size: inherit;
+  padding: 0.5rem;
+  background: none;
+  font-size: inherit;
 }

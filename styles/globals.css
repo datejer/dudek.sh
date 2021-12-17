@@ -1,89 +1,89 @@
 :root {
-	--background: #fff;
-	--foreground: #000;
-	--foreground-secondary: #000000aa;
-	--foreground-tertiary: #00000044;
-	--button-border: #00000022;
+  --background: #fff;
+  --foreground: #000;
+  --foreground-secondary: #000000aa;
+  --foreground-tertiary: #00000044;
+  --button-border: #00000022;
 }
 
-[data-theme='dark'] {
-	--background: #111;
-	--foreground: #fff;
-	--foreground-secondary: #ffffff88;
-	--foreground-tertiary: #ffffff44;
-	--button-border: #ffffff22;
+[data-theme="dark"] {
+  --background: #111;
+  --foreground: #fff;
+  --foreground-secondary: #ffffff88;
+  --foreground-tertiary: #ffffff44;
+  --button-border: #ffffff22;
 }
 
 @font-face {
-	font-family: 'NorumIpnum';
-	src: url('/fonts/NorumIpnumSegment-Regular.otf');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
+  font-family: "NorumIpnum";
+  src: url("/fonts/NorumIpnumSegment-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-family: 'IBM Plex Sans', sans-serif;
-	background: var(--background);
-	color: var(--foreground);
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  background: var(--background);
+  color: var(--foreground);
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 a[data-textlink] {
-	background: linear-gradient(
-		to bottom,
-		var(--foreground-tertiary) 0%,
-		var(--foreground-tertiary) 100%
-	);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 2px 2px;
-	transition: background-size 0.3s;
+  background: linear-gradient(
+    to bottom,
+    var(--foreground-tertiary) 0%,
+    var(--foreground-tertiary) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  transition: background-size 0.3s;
 }
 
 a[data-textlink]:hover {
-	background-size: 2px 1.2rem;
+  background-size: 2px 1.2rem;
 }
 
 *[data-visually-hidden] {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
-	background: var(--foreground-tertiary);
+  background: var(--foreground-tertiary);
 }
 
 ::selection {
-	background: var(--foreground-tertiary);
+  background: var(--foreground-tertiary);
 }
 
 ::-webkit-scrollbar {
-	width: 1rem;
+  width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--background);
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--foreground-tertiary);
-	border-radius: 1rem;
-	border: 0.4rem solid var(--background);
+  background: var(--foreground-tertiary);
+  border-radius: 1rem;
+  border: 0.4rem solid var(--background);
 }

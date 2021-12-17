@@ -1,51 +1,51 @@
 $mobileSize: 400px;
 
 .title {
-	font-family: "IBM Plex Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .project {
-	border: 4px solid var(--foreground);
-	border-radius: 0.75rem;
-	height: 100%;
-	padding: 0.75rem;
-	display: flex;
-	flex-direction: row;
-	transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 4px solid var(--foreground);
+  border-radius: 0.75rem;
+  height: 100%;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-	&:hover {
-		transform: scale(1.05);
-	}
+  &:hover {
+    transform: scale(1.05);
+  }
 
-	svg {
-		height: 6rem;
-		margin-left: 1rem;
-		transition: transform 0.6s ease-in-out;
-	}
+  svg {
+    height: 6rem;
+    margin-left: 1rem;
+    transition: transform 0.6s ease-in-out;
+  }
 
-	@media screen and (max-width: $mobileSize) {
-		flex-direction: column-reverse;
+  @media screen and (max-width: $mobileSize) {
+    flex-direction: column-reverse;
 
-		svg {
-			margin: 0;
-		}
-	}
+    svg {
+      margin: 0;
+    }
+  }
 }
 
 .projectName {
-	margin: 0;
-	font-size: 1.5rem;
-	font-family: "IBM Plex Mono", monospace;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .projectDesc {
-	margin: 0.25rem 0;
-	font-size: 1rem;
-	flex: 1;
-	color: var(--foreground-secondary);
-	text-align: justify;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  flex: 1;
+  color: var(--foreground-secondary);
+  text-align: justify;
 }
 
 .require {
-	border-color: #ff5370;
+  border-color: #ff5370;
 }
