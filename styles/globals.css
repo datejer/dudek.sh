@@ -6,7 +6,7 @@
 	--button-border: #00000022;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
 	--background: #111;
 	--foreground: #fff;
 	--foreground-secondary: #ffffff88;
@@ -15,8 +15,8 @@
 }
 
 @font-face {
-	font-family: "NorumIpnum";
-	src: url("/fonts/NorumIpnumSegment-Regular.otf");
+	font-family: 'NorumIpnum';
+	src: url('/fonts/NorumIpnumSegment-Regular.otf');
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
@@ -26,7 +26,8 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "IBM Plex Sans", sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
+	background: var(--background);
 	color: var(--foreground);
 }
 
