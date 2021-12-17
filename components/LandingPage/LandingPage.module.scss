@@ -45,6 +45,7 @@ $mobileSize: 600px;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 
   &:before {
     content: "";
