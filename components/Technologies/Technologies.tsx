@@ -14,6 +14,7 @@ import Discord from "../../assets/icons/discord.svg";
 import StyledComponents from "../../assets/icons/styledcomponents.svg";
 import Git from "../../assets/icons/git.svg";
 import Vercel from "../../assets/icons/vercel.svg";
+import Yarn from "../../assets/icons/yarn.svg";
 
 export function Technologies() {
   return (
@@ -85,6 +86,12 @@ export function Technologies() {
         <span data-visually-hidden>Git Version Control</span>
         <span aria-hidden="true">
           <Git />
+        </span>
+      </a>
+      <a href="https://yarnpkg.com/" className={clsx(styles.tech, styles.yarn)}>
+        <span data-visually-hidden>Yarn</span>
+        <span aria-hidden="true">
+          <Yarn />
         </span>
       </a>
       <a href="https://vercel.com/" className={clsx(styles.tech, styles.vercel)}>

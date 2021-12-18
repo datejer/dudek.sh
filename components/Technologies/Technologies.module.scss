@@ -107,6 +107,10 @@
   @include techColors(#f05032, #ffffff);
 }
 
+.yarn {
+  @include techColors(#2c8ebb, #ffffff);
+}
+
 .vercel {
   @include techColors(var(--foreground), var(--background));
 }

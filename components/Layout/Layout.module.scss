@@ -13,6 +13,7 @@ $mobileSize: 500px;
 }
 
 .mainWrapper {
+  flex: 1;
   padding: 0 2rem;
 
   @media screen and (max-width: $mobileSize) {
@@ -21,7 +22,6 @@ $mobileSize: 500px;
 }
 
 .main {
-  flex: 1;
   max-width: 42rem;
   margin: 0 auto;
 }
