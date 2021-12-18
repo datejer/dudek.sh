@@ -8,7 +8,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Header />
-        <main className={styles.main}>{children}</main>
+        <div className={styles.mainWrapper}>
+          <main className={styles.main}>{children}</main>
+        </div>
         <Footer />
       </div>
     </div>

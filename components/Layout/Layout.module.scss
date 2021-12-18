@@ -1,12 +1,7 @@
 $mobileSize: 500px;
 
 .wrapper {
-  padding: 0 2rem;
   min-height: 100vh;
-
-  @media screen and (max-width: $mobileSize) {
-    padding: 0 1rem;
-  }
 }
 
 .container {
@@ -15,6 +10,14 @@ $mobileSize: 500px;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.mainWrapper {
+  padding: 0 2rem;
+
+  @media screen and (max-width: $mobileSize) {
+    padding: 0 1rem;
+  }
 }
 
 .main {

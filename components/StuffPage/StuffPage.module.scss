@@ -1,4 +1,5 @@
-$mobileSize: 400px;
+$mobileSize: 725px;
+$mobileSize2: 400px;
 
 .title {
   font-family: "IBM Plex Mono", monospace;
@@ -26,6 +27,10 @@ $mobileSize: 400px;
   }
 
   @media screen and (max-width: $mobileSize) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $mobileSize2) {
     flex-direction: column-reverse;
 
     svg {
