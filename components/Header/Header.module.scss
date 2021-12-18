@@ -19,8 +19,12 @@ $mobileSize: 500px;
   top: 0px;
   backdrop-filter: blur(12px);
   z-index: 2;
-
   padding: 0 2rem;
+
+  // C'mon Firefox 😒
+  @supports not (backdrop-filter: none) {
+    background-color: var(--fallback-header-background);
+  }
 
   @media screen and (max-width: $mobileSize) {
     padding: 0 1rem;

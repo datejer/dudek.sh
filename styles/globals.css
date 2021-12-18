@@ -4,6 +4,7 @@
   --foreground-secondary: #000000aa;
   --foreground-tertiary: #00000044;
   --button-border: #00000022;
+  --fallback-header-background: #ffffffee;
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --foreground-secondary: #ffffff88;
   --foreground-tertiary: #ffffff44;
   --button-border: #ffffff22;
+  --fallback-header-background: #111111ee;
 }
 
 @font-face {
