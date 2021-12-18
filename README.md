@@ -28,8 +28,8 @@
 ```bash
 $ git clone https://github.com/datejer/dudek.ga.git
 $ cd dudek.ga
-$ npm i
-$ npm run dev
+$ yarn
+$ yarn dev
 ```
 
 ## lint.
@@ -37,19 +37,19 @@ $ npm run dev
 Using ESLint and Prettier.
 
 ```bash
-$ npm run lint
+$ yarn lint
 ```
 
 ## build.
 
 ```bash
-$ npm run build
+$ yarn build
 ```
 
 Additional `postbuild` script runs _automagically_ and uses `next-sitemap` to generate `sitemap.xml` and `robots.txt` files.
 
 ```bash
-$ npm run postbuild
+$ yarn postbuild
 ```
 
 ## deploy.
