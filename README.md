@@ -2,7 +2,11 @@
   <img align="right" style="margin: 0 0 0 1rem;"  src="./public/me.jpg" width="150" />
   <h1>artur dudek.</h1>
   
+  ![Next.js](https://img.shields.io/badge/Next.js-%23000000?logo=next.js&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6?logo=typescript&logoColor=white)
+  ![SCSS](https://img.shields.io/badge/Sass-%23CC6699?logo=sass&logoColor=white)
   ![Vercel](https://vercelbadge.vercel.app/api/datejer/dudek.ga)
+  ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdudek.ga)
   
   Hello 👋!
   
@@ -14,7 +18,7 @@
 - TypeScript
 - Next.js
 - next-themes
-- Sass
+- Sass (SCSS Modules)
 - Cheerio
 - react-loading-skeleton
 - react-parallax-tilt
@@ -26,6 +30,26 @@ $ git clone https://github.com/datejer/dudek.ga.git
 $ cd dudek.ga
 $ npm i
 $ npm run dev
+```
+
+## lint.
+
+Using ESLint and Prettier.
+
+```bash
+$ npm run lint
+```
+
+## build.
+
+```bash
+$ npm run build
+```
+
+Additional `postbuild` script runs _automagically_ and uses `next-sitemap` to generate `sitemap.xml` and `robots.txt` files.
+
+```bash
+$ npm run postbuild
 ```
 
 ## deploy.
