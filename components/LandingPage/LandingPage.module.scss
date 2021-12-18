@@ -1,5 +1,21 @@
 $mobileSize: 600px;
 
+@mixin linkColors($background, $icon) {
+  border-color: $background;
+
+  &:hover {
+    background-color: $background;
+
+    svg {
+      fill: $icon;
+    }
+  }
+
+  &:before {
+    background: $background;
+  }
+}
+
 .hero {
   margin-top: 4rem;
   display: flex;
@@ -81,49 +97,13 @@ $mobileSize: 600px;
 }
 
 .gh {
-  border-color: var(--foreground);
-
-  &:hover {
-    background-color: var(--foreground);
-
-    svg {
-      fill: var(--background);
-    }
-  }
-
-  &:before {
-    background: var(--foreground);
-  }
+  @include linkColors(var(--foreground), var(--background));
 }
 
 .tw {
-  border-color: #1da1f2;
-
-  &:hover {
-    background-color: #1da1f2;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #1da1f2;
-  }
+  @include linkColors(#1da1f2, #ffffff);
 }
 
 .li {
-  border-color: #0a66c2;
-
-  &:hover {
-    background-color: #0a66c2;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #0a66c2;
-  }
+  @include linkColors(#0a66c2, #ffffff);
 }

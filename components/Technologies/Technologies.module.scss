@@ -1,3 +1,19 @@
+@mixin techColors($background, $icon) {
+  border-color: $background;
+
+  &:hover {
+    background-color: $background;
+
+    svg {
+      fill: $icon;
+    }
+  }
+
+  &:before {
+    background: $background;
+  }
+}
+
 .technologies {
   display: flex;
   flex-wrap: wrap;
@@ -48,189 +64,49 @@
 }
 
 .js {
-  border-color: #f7df1e;
-
-  &:hover {
-    background-color: #f7df1e;
-
-    svg {
-      fill: var(--background);
-    }
-  }
-
-  &:before {
-    background: #f7df1e;
-  }
+  @include techColors(#f7df1e, var(--background));
 }
 
 .ts {
-  border-color: #3178c6;
-
-  &:hover {
-    background-color: #3178c6;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #3178c6;
-  }
+  @include techColors(#3178c6, #ffffff);
 }
 
 .node {
-  border-color: #339933;
-
-  &:hover {
-    background-color: #339933;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #339933;
-  }
+  @include techColors(#339933, #ffffff);
 }
 
 .react {
-  border-color: #61dafb;
-
-  &:hover {
-    background-color: #61dafb;
-  }
-
-  &:before {
-    background: #61dafb;
-  }
+  @include techColors(#61dafb, #ffffff);
 }
 
 .next {
-  border-color: var(--foreground);
-
-  &:hover {
-    background-color: var(--foreground);
-
-    svg {
-      fill: var(--background);
-    }
-  }
-
-  &:before {
-    background: var(--foreground);
-  }
+  @include techColors(var(--foreground), var(--background));
 }
 
 .gatsby {
-  border-color: #663399;
-
-  &:hover {
-    background-color: #663399;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #663399;
-  }
+  @include techColors(#663399, #ffffff);
 }
 
 .sass {
-  border-color: #cc6699;
-
-  &:hover {
-    background-color: #cc6699;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #cc6699;
-  }
+  @include techColors(#cc6699, #ffffff);
 }
 
 .sc {
-  border-color: #db7093;
-
-  &:hover {
-    background-color: #db7093;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #db7093;
-  }
+  @include techColors(#db7093, #ffffff);
 }
 
 .mongo {
-  border-color: #47a248;
-
-  &:hover {
-    background-color: #47a248;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #47a248;
-  }
+  @include techColors(#47a248, #ffffff);
 }
 
 .discord {
-  border-color: #5865f2;
-
-  &:hover {
-    background-color: #5865f2;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #5865f2;
-  }
+  @include techColors(#5865f2, #ffffff);
 }
 
 .git {
-  border-color: #f05032;
-
-  &:hover {
-    background-color: #f05032;
-
-    svg {
-      fill: #ffffff;
-    }
-  }
-
-  &:before {
-    background: #f05032;
-  }
+  @include techColors(#f05032, #ffffff);
 }
 
 .vercel {
-  border-color: var(--foreground);
-
-  &:hover {
-    background-color: var(--foreground);
-
-    svg {
-      fill: var(--background);
-    }
-  }
-
-  &:before {
-    background: var(--foreground);
-  }
+  @include techColors(var(--foreground), var(--background));
 }
