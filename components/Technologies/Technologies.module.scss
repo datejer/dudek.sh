@@ -1,7 +1,6 @@
 .technologies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .tech {
@@ -55,6 +54,20 @@
 
   &:before {
     background: #f7df1e;
+  }
+}
+
+.ts {
+  border-color: #3178c6;
+
+  &:hover {
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  &:before {
+    background: #3178c6;
   }
 }
 
@@ -122,6 +135,20 @@
   }
 }
 
+.sc {
+  border-color: #db7093;
+
+  &:hover {
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  &:before {
+    background: #db7093;
+  }
+}
+
 .mongo {
   border-color: #47a248;
 
@@ -147,5 +174,33 @@
 
   &:before {
     background: #5865f2;
+  }
+}
+
+.git {
+  border-color: #f05032;
+
+  &:hover {
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  &:before {
+    background: #f05032;
+  }
+}
+
+.vercel {
+  border-color: var(--foreground);
+
+  &:hover {
+    svg {
+      fill: var(--background);
+    }
+  }
+
+  &:before {
+    background: var(--foreground);
   }
 }
