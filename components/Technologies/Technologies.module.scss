@@ -13,6 +13,11 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  transition: background-color 0s ease;
+
+  &:hover {
+    transition: background-color 0s ease 0.2s;
+  }
 
   &:before {
     content: "";
@@ -25,8 +30,7 @@
     background: var(--foreground);
     border-radius: 100%;
     transform: scale(0);
-    transition-property: transform;
-    transition: 0.3s ease-out;
+    transition: transform 0.3s ease-out;
   }
 
   &:hover:before {
@@ -47,6 +51,8 @@
   border-color: #f7df1e;
 
   &:hover {
+    background-color: #f7df1e;
+
     svg {
       fill: var(--background);
     }
@@ -61,6 +67,8 @@
   border-color: #3178c6;
 
   &:hover {
+    background-color: #3178c6;
+
     svg {
       fill: #ffffff;
     }
@@ -75,6 +83,8 @@
   border-color: #339933;
 
   &:hover {
+    background-color: #339933;
+
     svg {
       fill: #ffffff;
     }
@@ -88,6 +98,10 @@
 .react {
   border-color: #61dafb;
 
+  &:hover {
+    background-color: #61dafb;
+  }
+
   &:before {
     background: #61dafb;
   }
@@ -97,6 +111,8 @@
   border-color: var(--foreground);
 
   &:hover {
+    background-color: var(--foreground);
+
     svg {
       fill: var(--background);
     }
@@ -111,6 +127,8 @@
   border-color: #663399;
 
   &:hover {
+    background-color: #663399;
+
     svg {
       fill: #ffffff;
     }
@@ -125,6 +143,8 @@
   border-color: #cc6699;
 
   &:hover {
+    background-color: #cc6699;
+
     svg {
       fill: #ffffff;
     }
@@ -139,6 +159,8 @@
   border-color: #db7093;
 
   &:hover {
+    background-color: #db7093;
+
     svg {
       fill: #ffffff;
     }
@@ -153,6 +175,8 @@
   border-color: #47a248;
 
   &:hover {
+    background-color: #47a248;
+
     svg {
       fill: #ffffff;
     }
@@ -167,6 +191,8 @@
   border-color: #5865f2;
 
   &:hover {
+    background-color: #5865f2;
+
     svg {
       fill: #ffffff;
     }
@@ -181,6 +207,8 @@
   border-color: #f05032;
 
   &:hover {
+    background-color: #f05032;
+
     svg {
       fill: #ffffff;
     }
@@ -195,6 +223,8 @@
   border-color: var(--foreground);
 
   &:hover {
+    background-color: var(--foreground);
+
     svg {
       fill: var(--background);
     }

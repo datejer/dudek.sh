@@ -46,6 +46,11 @@ $mobileSize: 600px;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  transition: background-color 0s ease;
+
+  &:hover {
+    transition: background-color 0s ease 0.2s;
+  }
 
   &:before {
     content: "";
@@ -58,8 +63,7 @@ $mobileSize: 600px;
     background: var(--foreground);
     border-radius: 100%;
     transform: scale(0);
-    transition-property: transform;
-    transition: 0.3s ease-out;
+    transition: transform 0.3s ease-out;
   }
 
   &:hover:before {
@@ -80,6 +84,8 @@ $mobileSize: 600px;
   border-color: var(--foreground);
 
   &:hover {
+    background-color: var(--foreground);
+
     svg {
       fill: var(--background);
     }
@@ -94,6 +100,8 @@ $mobileSize: 600px;
   border-color: #1da1f2;
 
   &:hover {
+    background-color: #1da1f2;
+
     svg {
       fill: #ffffff;
     }
@@ -108,6 +116,8 @@ $mobileSize: 600px;
   border-color: #0a66c2;
 
   &:hover {
+    background-color: #0a66c2;
+
     svg {
       fill: #ffffff;
     }
