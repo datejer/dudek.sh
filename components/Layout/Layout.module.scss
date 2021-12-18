@@ -11,12 +11,14 @@ $mobileSize: 500px;
 
 .container {
   min-height: 100vh;
-  max-width: 42rem;
-  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .main {
   flex: 1;
+  max-width: 42rem;
+  margin: 0 auto;
 }

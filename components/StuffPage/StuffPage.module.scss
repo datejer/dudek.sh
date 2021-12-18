@@ -12,6 +12,8 @@ $mobileSize: 400px;
   display: flex;
   flex-direction: row;
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: var(--background);
+  margin: 0.5rem;
 
   &:hover {
     transform: scale(1.05);
