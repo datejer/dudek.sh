@@ -10,6 +10,9 @@ import Twitter from "../../assets/icons/twitter.svg";
 import LinkedIn from "../../assets/icons/linkedin.svg";
 import At from "../../assets/icons/at.svg";
 
+import thatsme from "../../public/thatsme.png";
+import thatsmeleft from "../../public/thatsmeleft.png";
+
 export function LandingPage() {
   return (
     <div>
@@ -63,6 +66,28 @@ export function LandingPage() {
             layout="fixed"
             className={styles.img}
           />
+          <div className={styles.thatsme}>
+            <Image
+              src={thatsme}
+              alt="that's me"
+              width={185}
+              height={105}
+              priority
+              placeholder="blur"
+              layout="fixed"
+            />
+          </div>
+          <div className={styles.thatsmeleft}>
+            <Image
+              src={thatsmeleft}
+              alt="that's me"
+              width={158}
+              height={111}
+              priority
+              placeholder="blur"
+              layout="fixed"
+            />
+          </div>
         </div>
       </div>
     </div>

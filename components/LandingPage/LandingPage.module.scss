@@ -107,3 +107,57 @@ $mobileSize: 600px;
 .li {
   @include linkColors(#0a66c2, #ffffff);
 }
+
+// Experimental: "that's me" floaty
+
+.picture {
+  position: relative;
+}
+
+.thatsme {
+  position: absolute;
+  top: -50px;
+  right: -175px;
+  transform: scale(0.75);
+  filter: invert(0%);
+  opacity: 0.15;
+  overflow: hidden;
+  width: 185px;
+  height: 105px;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+
+  @media screen and (max-width: $mobileSize) {
+    display: block;
+    left: 110px;
+  }
+}
+
+.thatsmeleft {
+  position: absolute;
+  top: -50px;
+  left: -150px;
+  transform: scale(0.75);
+  filter: invert(0%);
+  opacity: 0.15;
+  display: none;
+  width: 158px;
+  height: 111px;
+
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+
+  @media screen and (max-width: $mobileSize) {
+    display: none;
+  }
+}
+
+[data-theme="dark"] {
+  .thatsme,
+  .thatsmeleft {
+    filter: invert(100%);
+  }
+}
