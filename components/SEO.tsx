@@ -12,7 +12,7 @@ export function SEO({ title, description, image, bigImage }: SEOProps) {
 
   const fullDescription = description || "full stack dev.";
 
-  const fullImage = image || "/me.jpg";
+  const fullImage = image || "https://dudek.ga/me.jpg";
 
   return (
     <Head>
@@ -28,7 +28,7 @@ export function SEO({ title, description, image, bigImage }: SEOProps) {
       <meta property="og:description" content={fullDescription} />
       <meta property="og:image" content={fullImage} />
 
-      {bigImage ? <meta property="twitter:card" content="summary_large_image" /> : ""}
+      <meta property="twitter:card" content={bigImage ? "summary_large_image" : "summary"} />
       <meta property="twitter:url" content="https://dudek.ga/" />
       <meta property="twitter:domain" content="dudek.ga" />
       <meta property="twitter:title" content={title || fullTitle} />
