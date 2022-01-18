@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { LanyardData } from "react-use-lanyard/dist";
 import { getActivityName, getElapsedTime } from "../../../lib/status";
@@ -12,6 +12,15 @@ type CardProps = {
 };
 
 const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
+  const [time, setTime] = useState(Date.now());
+
+  useEffect(() => {
+    const interval = setInterval(() => setTime(Date.now()), 500);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.card} ref={ref}>
@@ -51,7 +60,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                   <div className={styles.state}>{activity.state}</div>
                   {activity.timestamps?.start && (
                     <div className={styles.elapsed}>
-                      {getElapsedTime(activity.timestamps.start)} elapsed
+                      {getElapsedTime(activity.timestamps.start, time)} elapsed
                     </div>
                   )}
                 </div>
@@ -78,7 +87,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                 <div className={styles.details}>by {data.spotify.artist}</div>
                 <div className={styles.state}>on {data.spotify.album}</div>
                 <div className={styles.elapsed}>
-                  {getElapsedTime(data.spotify.timestamps.start)} elapsed
+                  {getElapsedTime(data.spotify.timestamps.start, time)} elapsed
                 </div>
               </div>
             </div>
