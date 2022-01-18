@@ -15,6 +15,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.card} ref={ref}>
+        {!data.activities.length ? "No activities" : null}
         {data.activities
           .filter((activity) => activity.id !== "spotify:1")
           .reverse()
