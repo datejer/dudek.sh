@@ -1,6 +1,7 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { SEO } from "../SEO";
+import { Status } from "../Status/Status";
 
 import styles from "./LandingPage.module.scss";
 
@@ -56,16 +57,19 @@ export function LandingPage() {
           </a>
         </div>
         <div className={styles.picture}>
-          <Image
-            src={me}
-            alt="Blurry face of Artur Dudek"
-            width={128}
-            height={128}
-            priority
-            placeholder="blur"
-            layout="fixed"
-            className={styles.img}
-          />
+          <div className={styles.pictureWrapper}>
+            <Image
+              src={me}
+              alt="Blurry face of Artur Dudek"
+              width={128}
+              height={128}
+              priority
+              placeholder="blur"
+              layout="fixed"
+              className={styles.img}
+            />
+            <Status />
+          </div>
           <div className={styles.thatsme}>
             <Image
               src={thatsme}

@@ -48,6 +48,12 @@ $mobileSize: 600px;
   margin-left: 2rem;
 }
 
+.pictureWrapper {
+  position: relative;
+  height: 128px;
+  width: 128px;
+}
+
 .img {
   border-radius: 50%;
 }

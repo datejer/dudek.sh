@@ -1,0 +1,14 @@
+.statusWrapper {
+  position: absolute;
+  right: 0.125rem;
+  bottom: 0.125rem;
+}
+
+.status {
+  background-color: #737e8c;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.5rem solid var(--background);
+  border-radius: 50%;
+  cursor: pointer;
+}
