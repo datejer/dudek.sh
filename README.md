@@ -22,6 +22,8 @@
 - Cheerio
 - react-loading-skeleton
 - react-parallax-tilt
+- Lanyard & react-use-lanyard
+- @tippyjs/react
 
 ## develop.
 
@@ -62,3 +64,4 @@ Deployed using ▲ Vercel at [dudek.ga](https://dudek.ga/)
 
 - [Simple Icons](https://simpleicons.org/)
 - [MDI](https://materialdesignicons.com/)
+- [Lanyard](https://github.com/Phineas/lanyard)
