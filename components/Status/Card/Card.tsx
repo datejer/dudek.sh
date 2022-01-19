@@ -11,6 +11,8 @@ type CardProps = {
   data: LanyardData;
 };
 
+// TODO: Make Tippy work on the Image components (for now using title)
+
 const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
   const [time, setTime] = useState(Date.now());
 
@@ -40,6 +42,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                       width={60}
                       height={60}
                       className={styles.largeImage}
+                      title={activity.assets?.large_text}
                     />
                   )}
                   <div className={styles.smallImageWrapper}>
@@ -50,16 +53,26 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                         width={20}
                         height={20}
                         className={styles.smallImage}
+                        title={activity.assets?.small_text}
                       />
                     )}
                   </div>
                 </div>
                 <div className={styles.info}>
-                  <h4 className={styles.name}>{activity.name}</h4>
-                  <div className={styles.details}>{activity.details}</div>
-                  <div className={styles.state}>{activity.state}</div>
+                  <h4 className={styles.name} title={activity.name}>
+                    {activity.name}
+                  </h4>
+                  <div className={styles.details} title={activity.details}>
+                    {activity.details}
+                  </div>
+                  <div className={styles.state} title={activity.state}>
+                    {activity.state}
+                  </div>
                   {activity.timestamps?.start && (
-                    <div className={styles.elapsed}>
+                    <div
+                      className={styles.elapsed}
+                      title={`Since ${new Date(activity.timestamps.start)}`}
+                    >
                       {getElapsedTime(activity.timestamps.start, time)} elapsed
                     </div>
                   )}
@@ -80,13 +93,28 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                   width={60}
                   height={60}
                   className={styles.largeImage}
+                  title={data.spotify.album}
                 />
               </div>
               <div className={styles.info}>
-                <h4 className={styles.name}>{data.spotify.song}</h4>
-                <div className={styles.details}>by {data.spotify.artist}</div>
-                <div className={styles.state}>on {data.spotify.album}</div>
-                <div className={styles.elapsed}>
+                <h4 className={styles.name} title={data.spotify.song}>
+                  <a
+                    className={styles.link}
+                    href={"https://open.spotify.com/track/" + data.spotify.track_id}
+                  >
+                    {data.spotify.song}
+                  </a>
+                </h4>
+                <div className={styles.details} title={data.spotify.artist}>
+                  by {data.spotify.artist}
+                </div>
+                <div className={styles.state} title={data.spotify.album}>
+                  on {data.spotify.album}
+                </div>
+                <div
+                  className={styles.elapsed}
+                  title={`Since ${new Date(data.spotify.timestamps.start)}`}
+                >
                   {getElapsedTime(data.spotify.timestamps.start, time)} elapsed
                 </div>
               </div>

@@ -75,9 +75,10 @@ $cardWidth: 300px;
     .assets {
       min-width: 60px;
       min-height: 60px;
-      width: 60px;
-      height: 60px;
+      max-width: 60px;
+      max-height: 60px;
       position: relative;
+      flex: 1;
 
       .largeImage {
         border-radius: 0.5rem;
@@ -101,6 +102,7 @@ $cardWidth: 300px;
       margin-left: 10px;
       white-space: nowrap;
       overflow: hidden;
+      flex: auto;
 
       .name {
         font-family: "IBM Plex Mono", monospace;
@@ -119,4 +121,8 @@ $cardWidth: 300px;
 
 .spotify {
   fill: #1db954;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
