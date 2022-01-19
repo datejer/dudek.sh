@@ -41,9 +41,9 @@ const getActivityName = (activity: number) => {
   }
 };
 
-const getElapsedTime = (since: number, until: number) => {
+const getElapsedTime = (since: number, until: number | null) => {
   let date = new Date(since);
-  let now = new Date(until);
+  let now = new Date(until || Date.now());
   let diff = now.getTime() - date.getTime();
 
   let seconds = Math.floor(diff / 1000) % 60;

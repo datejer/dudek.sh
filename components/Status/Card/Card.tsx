@@ -7,22 +7,31 @@ import styles from "./Card.module.scss";
 
 import Spotify from "../../../assets/icons/spotify.svg";
 
-type CardProps = {
-  data: LanyardData;
-};
-
-// TODO: Make Tippy work on the Image components (for now using title)
-
-const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
-  const [time, setTime] = useState(Date.now());
+const Timer = ({ start }: { start: number }) => {
+  const [time, setTime] = useState<number | null>(null);
 
   useEffect(() => {
+    setTime(Date.now());
     const interval = setInterval(() => setTime(Date.now()), 500);
     return () => {
       clearInterval(interval);
     };
   }, []);
 
+  return (
+    <div className={styles.elapsed} title={`Since ${new Date(start)}`}>
+      {getElapsedTime(start, time)} elapsed
+    </div>
+  );
+};
+
+// TODO: Make Tippy work on the Image components (for now using title)
+
+type CardProps = {
+  data: LanyardData;
+};
+
+const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.card} ref={ref}>
@@ -68,14 +77,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                   <div className={styles.state} title={activity.state}>
                     {activity.state}
                   </div>
-                  {activity.timestamps?.start && (
-                    <div
-                      className={styles.elapsed}
-                      title={`Since ${new Date(activity.timestamps.start)}`}
-                    >
-                      {getElapsedTime(activity.timestamps.start, time)} elapsed
-                    </div>
-                  )}
+                  {activity.timestamps?.start && <Timer start={activity.timestamps?.start} />}
                 </div>
               </div>
             </div>
@@ -111,12 +113,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                 <div className={styles.state} title={data.spotify.album}>
                   on {data.spotify.album}
                 </div>
-                <div
-                  className={styles.elapsed}
-                  title={`Since ${new Date(data.spotify.timestamps.start)}`}
-                >
-                  {getElapsedTime(data.spotify.timestamps.start, time)} elapsed
-                </div>
+                <Timer start={data.spotify.timestamps.start} />
               </div>
             </div>
           </div>
