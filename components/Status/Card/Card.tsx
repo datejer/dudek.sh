@@ -46,7 +46,14 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                 <div className={styles.assets}>
                   {activity.assets?.large_image && (
                     <Image
-                      src={`https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets?.large_image}.png`}
+                      src={
+                        activity.assets.large_image.startsWith("mp:external")
+                          ? activity.assets.large_image.replace(
+                              "mp:external",
+                              "https://media.discordapp.net/external",
+                            )
+                          : `https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets?.large_image}.png`
+                      }
                       alt={activity.assets?.large_text}
                       width={60}
                       height={60}

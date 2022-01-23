@@ -9,6 +9,6 @@ module.exports = {
     ];
   },
   images: {
-    domains: ["cdn.discordapp.com", "i.scdn.co"],
+    domains: ["cdn.discordapp.com", "i.scdn.co", "media.discordapp.net"],
   },
 };
