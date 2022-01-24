@@ -8,13 +8,16 @@ import Node from "../../assets/icons/nodedotjs.svg";
 import React from "../../assets/icons/react.svg";
 import Next from "../../assets/icons/nextdotjs.svg";
 import Gatsby from "../../assets/icons/gatsby.svg";
+import Vue from "../../assets/icons/vuedotjs.svg";
 import Sass from "../../assets/icons/sass.svg";
 import MongoDB from "../../assets/icons/mongodb.svg";
 import Discord from "../../assets/icons/discord.svg";
 import StyledComponents from "../../assets/icons/styledcomponents.svg";
 import Git from "../../assets/icons/git.svg";
 import Vercel from "../../assets/icons/vercel.svg";
+import Netlify from "../../assets/icons/netlify.svg";
 import Yarn from "../../assets/icons/yarn.svg";
+import Pug from "../../assets/icons/pug.svg";
 
 export function Technologies() {
   return (
@@ -58,6 +61,12 @@ export function Technologies() {
           <Gatsby />
         </span>
       </a>
+      <a href="https://vuejs.org/" className={clsx(styles.tech, styles.vue)}>
+        <span data-visually-hidden>Vue.js</span>
+        <span aria-hidden="true">
+          <Vue />
+        </span>
+      </a>
       <a href="https://sass-lang.com/" className={clsx(styles.tech, styles.sass)}>
         <span data-visually-hidden>Sass and SCSS</span>
         <span aria-hidden="true">
@@ -98,6 +107,18 @@ export function Technologies() {
         <span data-visually-hidden>Vercel</span>
         <span aria-hidden="true">
           <Vercel />
+        </span>
+      </a>
+      <a href="https://netlify.com/" className={clsx(styles.tech, styles.netlify)}>
+        <span data-visually-hidden>Netlify</span>
+        <span aria-hidden="true">
+          <Netlify />
+        </span>
+      </a>
+      <a href="https://pugjs.org/" className={clsx(styles.tech, styles.pug)}>
+        <span data-visually-hidden>Pug</span>
+        <span aria-hidden="true">
+          <Pug />
         </span>
       </a>
     </div>

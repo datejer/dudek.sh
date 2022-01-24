@@ -87,6 +87,10 @@
   @include techColors(#663399, #ffffff);
 }
 
+.vue {
+  @include techColors(#4fc08d, #ffffff);
+}
+
 .sass {
   @include techColors(#cc6699, #ffffff);
 }
@@ -113,4 +117,12 @@
 
 .vercel {
   @include techColors(var(--foreground), var(--background));
+}
+
+.netlify {
+  @include techColors(#00c7b7, #ffffff);
+}
+
+.pug {
+  @include techColors(#a86454, #ffffff);
 }
