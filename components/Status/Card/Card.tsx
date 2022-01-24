@@ -39,7 +39,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
         {data.activities
           .filter((activity) => activity.id === "custom")
           .map((activity, index) => (
-            <div key={index} className={styles.status}>
+            <div key={index} className={styles.activity}>
               {activity.emoji?.name} {activity.state}
             </div>
           ))}
