@@ -37,7 +37,14 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
       <div className={styles.card} ref={ref}>
         {!data.activities.length ? "No activities" : null}
         {data.activities
-          .filter((activity) => activity.id !== "spotify:1")
+          .filter((activity) => activity.id === "custom")
+          .map((activity, index) => (
+            <div key={index} className={styles.status}>
+              {activity.emoji?.name} {activity.state}
+            </div>
+          ))}
+        {data.activities
+          .filter((activity) => activity.id !== "spotify:1" && activity.id !== "custom")
           .reverse()
           .map((activity, index) => (
             <div key={index} className={styles.activity}>
