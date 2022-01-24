@@ -31,13 +31,13 @@ export function LandingPage() {
             </a>
             .
           </p>
-          <a href="https://github.com/datejer" className={clsx(styles.link, styles.gh)}>
+          <a href="/github" className={clsx(styles.link, styles.gh)}>
             <span data-visually-hidden>My GitHub Profile</span>
             <span aria-hidden="true">
               <GitHub />
             </span>
           </a>
-          <a href="https://twitter.com/arturdudek_" className={clsx(styles.link, styles.tw)}>
+          <a href="/twitter" className={clsx(styles.link, styles.tw)}>
             <span data-visually-hidden>My Twitter Profile</span>
             <span aria-hidden="true">
               <Twitter />
