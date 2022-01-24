@@ -1,0 +1,86 @@
+[
+  {
+    "name": "ZSK Amnesty",
+    "description": "App for tracking letters written during the Amnesty International marathon at school.",
+    "link": "https://github.com/tripleadev/zsk-amnesty",
+    "color": "#2b7489"
+  },
+  {
+    "name": "react-vgui",
+    "description": "A React library emulating the feel of Half-Life 1's \"VGUI\" UI system.",
+    "link": "https://vgui.gq/",
+    "color": "#2b7489"
+  },
+  {
+    "name": "Splash",
+    "description": "Browse Unsplash images from Discord. 🖼️",
+    "link": "https://github.com/datejer/splash",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "mojangstatus",
+    "description": "Cached Mojang Status API - no more rate limiting!",
+    "link": "https://github.com/datejer/mojangstatus",
+    "color": "#2b7489"
+  },
+  {
+    "name": "SearchPI",
+    "description": "Neat website for searching patterns in the digits of π.",
+    "link": "https://github.com/datejer/SearchPI",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "hypxl",
+    "description": "Hypixel statistics lookup. 📊",
+    "link": "https://github.com/datejer/hypxl",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "GDBL",
+    "description": "A simple list of Discord bots to enhance your experience! 🌌",
+    "link": "https://github.com/gdbl",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "p5js-cli",
+    "description": "An unofficial p5.js command line tool.",
+    "link": "https://github.com/datejer/p5js-cli",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "Tytułowa",
+    "description": "Title page generator for Geography notebooks.",
+    "link": "https://github.com/zsk-poznan/tytulowa",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "Badges",
+    "description": "A set of awesome shields.io badges for personal use.",
+    "link": "https://github.com/datejer/badges",
+    "color": "#6e7681"
+  },
+  {
+    "name": "minecraft-sh",
+    "description": "Shell scripts for Minecraft servers.",
+    "link": "https://github.com/datejer/minecraft-sh",
+    "color": "#89e051"
+  },
+  {
+    "name": "Quotes",
+    "description": "Tracker for our class tasks, homework, duty and notebook schedule.",
+    "link": "https://github.com/tripleadev/zsktasks-website",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "Quotes",
+    "description": "✨ A neat aesthetic website with random quotes from my life or the internet.",
+    "link": "https://github.com/datejer/quotes",
+    "color": "#f1e05a"
+  },
+  {
+    "name": "Lapbook",
+    "description": "📔 Website for our interactive lapbook project for Polish lessons.",
+    "link": "https://github.com/tripleadev/lapbook-website",
+    "color": "#f1e05a"
+  }
+]

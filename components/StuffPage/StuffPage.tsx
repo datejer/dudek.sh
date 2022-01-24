@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { SEO } from "../SEO";
 import { PinnedRepos } from "../PinnedRepos/PinnedRepos";
+import { Projects } from "../Projects/Projects";
 import { Technologies } from "../Technologies/Technologies";
 
 import styles from "./StuffPage.module.scss";
@@ -26,12 +27,16 @@ export function StuffPage() {
         </div>
       </a>
       <div>
-        <h2 className={styles.title}>stuff i made.</h2>
+        <h2 className={styles.title}>stuff i know.</h2>
+        <Technologies />
+      </div>
+      <div>
+        <h2 className={styles.title}>stuff i pinned.</h2>
         <PinnedRepos />
       </div>
       <div>
-        <h2 className={styles.title}>stuff i know.</h2>
-        <Technologies />
+        <h2 className={styles.title}>stuff i made.</h2>
+        <Projects />
       </div>
     </div>
   );
