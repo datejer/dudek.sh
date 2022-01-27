@@ -31,6 +31,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   background: var(--background);
   color: var(--foreground);
+  transition: background 0.15s, color 0.15s;
 }
 
 a {
