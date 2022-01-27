@@ -5,7 +5,7 @@ import styles from "./UsesPage.module.scss";
 export function UsesPage() {
   return (
     <div>
-      <SEO title="uses" description="stuff i use" />
+      <SEO title="uses" description="stuff i use." />
       <h1 className={styles.title}>stuff i use.</h1>
       <p>
         Inspired by Wes Bos'{" "}
@@ -188,7 +188,7 @@ export function UsesPage() {
           <div className={styles.item}>
             <div className={styles.itemTitleWrapper}>
               <span aria-hidden="true">☕</span>
-              <h3 className={styles.itemTitle}>Intellij IDEA</h3>
+              <h3 className={styles.itemTitle}>IntelliJ IDEA</h3>
             </div>
             <p className={styles.itemDesc}>Kotlin / Java (mainly Minecraft)</p>
           </div>

@@ -11,7 +11,7 @@ import Require from "../../assets/icons/require.svg";
 export function StuffPage() {
   return (
     <div>
-      <SEO title="stuff" description="stuff i made" />
+      <SEO title="stuff" description="stuff i made." />
       <a href="https://require.podcast.gq">
         <div className={clsx(styles.project, styles.require)}>
           <div>
