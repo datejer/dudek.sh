@@ -26,7 +26,7 @@ export function LandingPage() {
             Hello 👋! <br />
             I'm a 16 year old web developer from Poland 🇵🇱. I'm currently studying at a High School,
             and enjoy making websites in React! I'm also the Host of{" "}
-            <a href="https://require.podcast.gq/" data-textlink="true">
+            <a href="https://require.pl/" data-textlink="true">
               Require Podcast
             </a>
             .

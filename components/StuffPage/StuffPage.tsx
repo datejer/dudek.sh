@@ -12,7 +12,7 @@ export function StuffPage() {
   return (
     <div>
       <SEO title="stuff" description="stuff i made." />
-      <a href="https://require.podcast.gq">
+      <a href="https://require.pl">
         <div className={clsx(styles.project, styles.require)}>
           <div>
             <h2 className={styles.projectName}>Require Podcast</h2>
