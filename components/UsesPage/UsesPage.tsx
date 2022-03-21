@@ -91,6 +91,15 @@ export function UsesPage() {
         <li className={styles.itemWrapper}>
           <div className={styles.item}>
             <div className={styles.itemTitleWrapper}>
+              <span aria-hidden="true">💻</span>
+              <h3 className={styles.itemTitle}>MacBook Pro</h3>
+            </div>
+            <p className={styles.itemDesc}>Work & Code; M1 Pro; 14"; 2021</p>
+          </div>
+        </li>
+        <li className={styles.itemWrapper}>
+          <div className={styles.item}>
+            <div className={styles.itemTitleWrapper}>
               <span aria-hidden="true">📱</span>
               <h3 className={styles.itemTitle}> Huawei P10</h3>
             </div>

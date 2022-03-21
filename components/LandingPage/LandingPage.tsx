@@ -21,11 +21,15 @@ export function LandingPage() {
       <div className={styles.hero}>
         <div>
           <h1 className={styles.name}>artur dudek</h1>
-          <p className={styles.position}>full stack dev</p>
+          <p className={styles.position}>frontend dev @ appunite</p>
           <p>
             Hello 👋! <br />
             I'm a 16 year old web developer from Poland 🇵🇱. I'm currently studying at a High School,
-            and enjoy making websites in React! I'm also the Host of{" "}
+            and enjoy making websites in React! I work as a Frontend Developer at{" "}
+            <a href="https://appunite.com" data-textlink="true">
+              AppUnite
+            </a>{" "}
+            and also host{" "}
             <a href="https://require.pl/" data-textlink="true">
               Require Podcast
             </a>
