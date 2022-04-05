@@ -5,8 +5,11 @@ import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 import { AppProps } from "next/app";
 import { Layout } from "../components/Layout/Layout";
+import { useAprilFools } from "../lib/useAprilFools";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useAprilFools();
+
   return (
     <ThemeProvider defaultTheme="dark">
       <Layout>
