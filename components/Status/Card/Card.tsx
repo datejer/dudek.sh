@@ -68,6 +68,18 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                       title={activity.assets?.large_text}
                     />
                   )}
+                  {!activity.assets?.large_image && (
+                    <Image
+                      src={`https://unavatar.io/${activity.name}?fallback=${encodeURIComponent(
+                        `https://source.boringavatars.com/marble/60/${activity.name}?square`,
+                      )}`}
+                      alt={activity.name}
+                      width={60}
+                      height={60}
+                      className={styles.largeImage}
+                      title={activity.name}
+                    />
+                  )}
                   <div className={styles.smallImageWrapper}>
                     {activity.assets?.small_image && (
                       <Image
