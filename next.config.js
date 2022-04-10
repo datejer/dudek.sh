@@ -40,7 +40,6 @@ module.exports = {
       "cdn.discordapp.com",
       "i.scdn.co",
       "media.discordapp.net",
-      "unavatar.io",
       "source.boringavatars.com",
     ],
   },

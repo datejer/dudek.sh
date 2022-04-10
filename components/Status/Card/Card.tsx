@@ -70,9 +70,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                   )}
                   {!activity.assets?.large_image && (
                     <Image
-                      src={`https://unavatar.io/${activity.name}?fallback=${encodeURIComponent(
-                        `https://source.boringavatars.com/marble/60/${activity.name}?square`,
-                      )}`}
+                      src={`https://source.boringavatars.com/marble/60/${activity.name}?square`}
                       alt={activity.name}
                       width={60}
                       height={60}
