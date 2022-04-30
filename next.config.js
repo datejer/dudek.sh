@@ -36,11 +36,6 @@ module.exports = {
     ];
   },
   images: {
-    domains: [
-      "cdn.discordapp.com",
-      "i.scdn.co",
-      "media.discordapp.net",
-      "source.boringavatars.com",
-    ],
+    domains: ["cdn.discordapp.com", "i.scdn.co", "media.discordapp.net"],
   },
 };

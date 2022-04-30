@@ -6,6 +6,7 @@ import { getActivityName, getElapsedTime } from "../../../lib/status";
 import styles from "./Card.module.scss";
 
 import Spotify from "../../../assets/icons/spotify.svg";
+import { Unknown } from "../../../assets/icons/unknown";
 
 const Timer = ({ start }: { start: number }) => {
   const [time, setTime] = useState<number | null>(null);
@@ -69,8 +70,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                     />
                   )}
                   {!activity.assets?.large_image && (
-                    <Image
-                      src={`https://source.boringavatars.com/marble/60/${activity.name}?square`}
+                    <Unknown
                       alt={activity.name}
                       width={60}
                       height={60}
