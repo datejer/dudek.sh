@@ -13,8 +13,11 @@ import At from "../../assets/icons/at.svg";
 
 import thatsme from "../../public/thatsme.png";
 import thatsmeleft from "../../public/thatsmeleft.png";
+import { getCurrentAge, getIndefiniteArticle } from "../../lib/age";
 
 export function LandingPage() {
+  const age = getCurrentAge("2005-05-16");
+
   return (
     <div>
       <SEO />
@@ -24,8 +27,9 @@ export function LandingPage() {
           <p className={styles.position}>frontend dev @ appunite</p>
           <p>
             Hello 👋! <br />
-            I'm a 16 year old web developer from Poland 🇵🇱. I'm currently studying at a High School,
-            and enjoy making websites in React! I work as a Frontend Developer at{" "}
+            I'm {getIndefiniteArticle(age)} {age} year old web developer from Poland 🇵🇱. I'm
+            currently studying at a High School, and enjoy making websites in React! I work as a
+            Frontend Developer at{" "}
             <a href="https://appunite.com" data-textlink="true">
               AppUnite
             </a>{" "}
