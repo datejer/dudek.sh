@@ -121,7 +121,9 @@ $cardWidth: 300px;
 }
 
 .customActivity {
-  padding-bottom: 1rem;
+  &:not(:only-of-type) {
+    padding-bottom: 1rem;
+  }
 
   span {
     vertical-align: sub;
