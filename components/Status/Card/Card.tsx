@@ -1,6 +1,6 @@
 import { forwardRef, useEffect, useState } from "react";
 import Image from "next/image";
-import { LanyardData } from "react-use-lanyard/dist";
+import { Emoji, LanyardData } from "react-use-lanyard";
 import { getActivityName, getElapsedTime } from "../../../lib/status";
 
 import styles from "./Card.module.scss";
@@ -26,6 +26,24 @@ const Timer = ({ start }: { start: number }) => {
   );
 };
 
+const CustomEmoji = ({ emoji }: { emoji: Emoji }) => {
+  if (!emoji.id) {
+    return <>{emoji.name}</>;
+  } else {
+    return (
+      <Image
+        src={`https://cdn.discordapp.com/emojis/${emoji.id}.${
+          emoji.animated ? "gif" : "webp"
+        }?size=44&quality=lossless`}
+        alt={emoji.name}
+        width={22}
+        height={22}
+        title={emoji.name}
+      />
+    );
+  }
+};
+
 // TODO: Make Tippy work on the Image components (for now using title)
 
 type CardProps = {
@@ -40,8 +58,8 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
         {data.activities
           .filter((activity) => activity.id === "custom")
           .map((activity, index) => (
-            <div key={index} className={styles.activity}>
-              {activity.emoji?.name} {activity.state}
+            <div key={index} className={styles.customActivity}>
+              {activity.emoji && <CustomEmoji emoji={activity.emoji} />} {activity.state}
             </div>
           ))}
         {data.activities
