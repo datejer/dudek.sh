@@ -1,0 +1,106 @@
+{
+  "physical": [
+    {
+      "icon": "🧠",
+      "title": "CPU",
+      "description": "Ryzen 7 3700X @3.6 GHz"
+    },
+    {
+      "icon": "🎨",
+      "title": "GPU",
+      "description": "Gigabyte RTX 2060 OC"
+    },
+    {
+      "icon": "🧩",
+      "title": "Motherboard",
+      "description": "Gigabyte B450 AORUS ELITE V2"
+    },
+    {
+      "icon": "📚",
+      "title": "RAM",
+      "description": "2x8GB Crucial Ballistix DDR4 @3200 MHz"
+    },
+    {
+      "icon": "📔",
+      "title": "Storage",
+      "description": "Samsung 970 EVO Plus 500GB; Seagate Barracuda 2TB"
+    },
+    {
+      "icon": "📺",
+      "title": "Monitor",
+      "description": "Samsung Odyssey G5"
+    },
+    {
+      "icon": "🐭",
+      "title": "Mouse",
+      "description": "Roccat Kain 100 AIMO; HP Z3700 (laptop)"
+    },
+    {
+      "icon": "💻",
+      "title": "Hyperbook N14S",
+      "description": "School & Code; i7-10510U; 16GB; 1TB"
+    },
+    {
+      "icon": "💻",
+      "title": "MacBook Pro",
+      "description": "Work & Code; M1 Pro; 14\"; 2021"
+    },
+    {
+      "icon": "📱",
+      "title": "Huawei P10",
+      "description": "Android 9; 2x64GB"
+    },
+    {
+      "icon": "🎧",
+      "title": "JBL Tune 500BT",
+      "description": "Black"
+    },
+    {
+      "icon": "⌚",
+      "title": "Xiaomi Amazfit Bip",
+      "description": "Black"
+    }
+  ],
+  "digital": [
+    {
+      "icon": "📝",
+      "title": "Visual Studio Code",
+      "description": "Synthwave '84, Material Icon Theme, JetBrains Mono (13, ligatures)"
+    },
+    {
+      "icon": "🧮",
+      "title": "Windows Terminal",
+      "description": "PowerShell; posh-git; Ubuntu colors and prompt"
+    },
+    {
+      "icon": "🌐",
+      "title": "Google Chrome",
+      "description": "I look at cats"
+    },
+    {
+      "icon": "▲",
+      "title": "Vercel",
+      "description": "Deploying apps (including this one)"
+    },
+    {
+      "icon": "📓",
+      "title": "Notion",
+      "description": "School, personal and podcast notes"
+    },
+    {
+      "icon": "🌋",
+      "title": "paint.net",
+      "description": "Favorite IMP"
+    },
+    {
+      "icon": "🎬",
+      "title": "Adobe CC",
+      "description": "Photoshop; Premiere Pro; Audition"
+    },
+    {
+      "icon": "☕",
+      "title": "IntelliJ IDEA",
+      "description": "Kotlin / Java (mainly Minecraft)"
+    }
+  ]
+}
