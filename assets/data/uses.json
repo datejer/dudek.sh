@@ -36,6 +36,16 @@
       "description": "Roccat Kain 100 AIMO; HP Z3700 (laptop)"
     },
     {
+      "icon": "🎤",
+      "title": "Microphone",
+      "description": "Behringer C-1"
+    },
+    {
+      "icon": "🎛️",
+      "title": "Audio Interface",
+      "description": "Behringer UM2"
+    },
+    {
       "icon": "💻",
       "title": "Hyperbook N14S",
       "description": "School & Code; i7-10510U; 16GB; 1TB"
@@ -65,12 +75,22 @@
     {
       "icon": "📝",
       "title": "Visual Studio Code",
-      "description": "Synthwave '84, Material Icon Theme, JetBrains Mono (13, ligatures)"
+      "description": "Tokyo Night Storm, Material Icon Theme, JetBrains Mono (13, ligatures)"
     },
     {
       "icon": "🧮",
       "title": "Windows Terminal",
       "description": "PowerShell; posh-git; Ubuntu colors and prompt"
+    },
+    {
+      "icon": "🎹",
+      "title": "iTerm 2",
+      "description": "oh-my-zsh; spaceship-prompt; synthwave-everything"
+    },
+    {
+      "icon": "🪟",
+      "title": "Rectangle",
+      "description": "Windows go zooom..."
     },
     {
       "icon": "🌐",
