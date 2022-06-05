@@ -103,6 +103,18 @@
   @include techColors(#47a248, #ffffff);
 }
 
+.postgres {
+  @include techColors(#4169e1, #ffffff);
+}
+
+.graphql {
+  @include techColors(#e10098, #ffffff);
+}
+
+.apollo {
+  @include techColors(#311c87, #ffffff);
+}
+
 .discord {
   @include techColors(#5865f2, #ffffff);
 }

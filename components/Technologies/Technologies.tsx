@@ -11,6 +11,9 @@ import Gatsby from "../../assets/icons/gatsby.svg";
 import Vue from "../../assets/icons/vuedotjs.svg";
 import Sass from "../../assets/icons/sass.svg";
 import MongoDB from "../../assets/icons/mongodb.svg";
+import PostgreSQL from "../../assets/icons/postgresql.svg";
+import GraphQL from "../../assets/icons/graphql.svg";
+import ApolloGraphQL from "../../assets/icons/apollographql.svg";
 import Discord from "../../assets/icons/discord.svg";
 import StyledComponents from "../../assets/icons/styledcomponents.svg";
 import Git from "../../assets/icons/git.svg";
@@ -83,6 +86,27 @@ export function Technologies() {
         <span data-visually-hidden>MongoDB</span>
         <span aria-hidden="true">
           <MongoDB />
+        </span>
+      </a>
+      <a href="https://www.postgresql.org/" className={clsx(styles.tech, styles.postgres)}>
+        <span data-visually-hidden>PostgreSQL</span>
+        <span aria-hidden="true">
+          <PostgreSQL />
+        </span>
+      </a>
+      <a href="https://graphql.org/" className={clsx(styles.tech, styles.graphql)}>
+        <span data-visually-hidden>GraphQL</span>
+        <span aria-hidden="true">
+          <GraphQL />
+        </span>
+      </a>
+      <a
+        href="https://www.apollographql.com/docs/react/"
+        className={clsx(styles.tech, styles.apollo)}
+      >
+        <span data-visually-hidden>Apollo Client</span>
+        <span aria-hidden="true">
+          <ApolloGraphQL />
         </span>
       </a>
       <a href="https://discord.js.org/" className={clsx(styles.tech, styles.discord)}>
