@@ -1,21 +1,26 @@
 module.exports = {
   async redirects() {
     return [
-      {
-        source: "/linkedin",
+      ...["/linkedin", "/li"].map((source) => ({
+        source,
         destination: "https://www.linkedin.com/in/artur-dudek/",
         permanent: true,
-      },
-      {
-        source: "/twitter",
+      })),
+      ...["/twitter", "/tw", "/twt", "/twit"].map((source) => ({
+        source,
         destination: "https://twitter.com/arturdudek_",
         permanent: true,
-      },
-      {
-        source: "/github",
+      })),
+      ...["/github", "/gh", "/source", "/code"].map((source) => ({
+        source,
         destination: "https://github.com/datejer",
         permanent: true,
-      },
+      })),
+      ...["/email", "/mail"].map((source) => ({
+        source,
+        destination: "mailto:artur@dudek.ga",
+        permanent: true,
+      })),
     ];
   },
   async headers() {

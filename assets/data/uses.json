@@ -31,6 +31,12 @@
       "description": "Samsung Odyssey G5"
     },
     {
+      "icon": "🎹",
+      "title": "Keyboard",
+      "description": "Custom ↗",
+      "url": "/boards"
+    },
+    {
       "icon": "🐭",
       "title": "Mouse",
       "description": "Roccat Kain 100 AIMO; HP Z3700 (laptop)"
@@ -62,13 +68,13 @@
     },
     {
       "icon": "🎧",
-      "title": "JBL Tune 500BT",
-      "description": "Black"
+      "title": "Headphones",
+      "description": "JBL Tune 500BT; Xiaomi AirDots"
     },
     {
       "icon": "⌚",
-      "title": "Xiaomi Amazfit Bip",
-      "description": "Black"
+      "title": "Watch",
+      "description": "Xiaomi Amazfit Bip (Black)"
     }
   ],
   "digital": [

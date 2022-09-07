@@ -1,0 +1,29 @@
+$mobileSize: 650px;
+$mobileSize2: 450px;
+
+.title {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.itemGrid {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.itemWrapper {
+  width: 33%;
+  display: inline-block;
+  white-space: normal;
+  padding: 0.5rem;
+
+  @media screen and (max-width: $mobileSize) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $mobileSize2) {
+    width: 100%;
+  }
+}

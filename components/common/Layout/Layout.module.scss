@@ -1,0 +1,27 @@
+$mobileSize: 500px;
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mainWrapper {
+  flex: 1;
+  padding: 0 2rem;
+
+  @media screen and (max-width: $mobileSize) {
+    padding: 0 1rem;
+  }
+}
+
+.main {
+  max-width: 42rem;
+  margin: 0 auto;
+}

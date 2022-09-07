@@ -1,0 +1,57 @@
+$mobileSize: 725px;
+
+.pinned {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.repoWrapper {
+  width: 50%;
+  display: inline-block;
+  white-space: normal;
+  padding: 0.5rem;
+
+  @media screen and (max-width: $mobileSize) {
+    width: 100%;
+    padding: 0 0 0.5rem 0;
+  }
+}
+
+.repo {
+  border: 4px solid var(--foreground);
+  border-radius: 0.75rem;
+  height: 100%;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.1s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.repoName {
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.repoDescription {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  flex: 1;
+  color: var(--foreground-secondary);
+}
+
+.repoStats {
+  display: flex;
+  gap: 1rem;
+}
+
+.placeholderNumber {
+  font-family: "NorumIpnum", monospace;
+}

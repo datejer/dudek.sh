@@ -1,0 +1,61 @@
+$mobileSize: 500px;
+
+@mixin button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid var(--button-border);
+  }
+}
+
+.wrapper {
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(12px);
+  z-index: 10;
+  padding: 0 2rem;
+
+  // C'mon Firefox 😒
+  @supports not (backdrop-filter: none) {
+    background-color: var(--fallback-header-background);
+  }
+
+  @media screen and (max-width: $mobileSize) {
+    padding: 0 1rem;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  grid-gap: 0.5rem;
+}
+
+.button {
+  @include button;
+}
+
+.themeSwitch {
+  @include button;
+
+  padding: 0.5rem;
+  background: none;
+  font-size: inherit;
+}

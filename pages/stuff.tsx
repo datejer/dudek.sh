@@ -1,4 +1,4 @@
-import { StuffPage } from "../components/StuffPage/StuffPage";
+import { StuffPage } from "../components/stuff/StuffPage/StuffPage";
 
 export default function Stuff() {
   return <StuffPage />;
