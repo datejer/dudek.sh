@@ -12,11 +12,15 @@ export const BoardsPage = () => {
 
   return (
     <div>
-      <SEO title="boards" description="keyboards i use." />
+      <SEO
+        title="boards"
+        description="keyboards i use."
+        image={`https://dudek.ga/keyboards/${boards[0].image}`}
+      />
       <h1 className={styles.title}>keyboards i use.</h1>
 
       <ul className={styles.list}>
-        {boards.data.map(({ name, description, image }, i) => (
+        {boards.map(({ name, description, image }, i) => (
           <li key={i}>
             <BoardPreview
               title={name}

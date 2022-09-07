@@ -10,7 +10,12 @@ import ChevronLeft from "../../../assets/icons/arrow-left.svg";
 export const BoardInfoPage = ({ name, description, image, info, gallery }: Board) => {
   return (
     <div className={styles.wrapper}>
-      <SEO title={name} description={description} image={`https://dudek.ga/keyboards/${image}`} />
+      <SEO
+        title={name}
+        description={description}
+        image={`https://dudek.ga/keyboards/${image}`}
+        bigImage
+      />
       <div className={styles.cover}>
         <Image
           alt={`Photo of ${name}`}

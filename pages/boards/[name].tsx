@@ -3,7 +3,7 @@ import boards from "../../assets/data/boards.json";
 import { BoardInfoPage } from "../../components/boards/BoardInfoPage/BoardInfoPage";
 import { slugify } from "../../lib/slugify";
 
-export type Board = typeof boards.data[number];
+export type Board = typeof boards[number];
 
 function Page(props: InferGetStaticPropsType<typeof getStaticProps>) {
   return <BoardInfoPage {...props} />;
@@ -12,7 +12,7 @@ function Page(props: InferGetStaticPropsType<typeof getStaticProps>) {
 export async function getStaticPaths() {
   return {
     paths: [
-      ...boards.data.map(({ name }) => {
+      ...boards.map(({ name }) => {
         return { params: { name: slugify(name) } };
       }),
     ],
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   return {
     props: {
-      ...(boards.data.find((board) => slugify(board.name) === params?.name) as Board),
+      ...(boards.find((board) => slugify(board.name) === params?.name) as Board),
     },
   };
 }
