@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { getCurrentAge, getIndefiniteArticle } from "../../lib/age";
 
 type SEOProps = {
   title?: string;
@@ -10,7 +11,14 @@ type SEOProps = {
 export const SEO = ({ title, description, image, bigImage }: SEOProps) => {
   const fullTitle = title ? `${title} @ artur dudek.` : "artur dudek.";
 
-  const fullDescription = description || "full stack dev.";
+  const age = getCurrentAge("2005-05-16");
+
+  const fullDescription =
+    description ||
+    `Hello 👋!
+    I'm ${getIndefiniteArticle(
+      age,
+    )} ${age} year old web developer from Poland 🇵🇱. I'm currently studying at a High School, and enjoy making websites in React! I work as a Frontend Developer at AppUnite and also host Require Podcast.`;
 
   const fullImage = image || "https://dudek.ga/me.jpg";
 
