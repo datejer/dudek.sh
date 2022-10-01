@@ -2,7 +2,7 @@
   {
     "name": "GK64X",
     "description": "Epomaker Avocado",
-    "image": "gk64x/1.png",
+    "image": "gk64x/1.jpg",
     "info": [
       "- Avocado Keycaps Set (dye-sub PBT, XDA)",
       "- Lubed Gateron Milky Yellows (Krytox 205g0)",
@@ -12,6 +12,6 @@
       "- Tape mod",
       "- Case foam"
     ],
-    "gallery": ["gk64x/2.png"]
+    "gallery": ["gk64x/2.jpg"]
   }
 ]
