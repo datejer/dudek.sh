@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://dudek.ga",
+  siteUrl: "https://dudek.sh",
   generateRobotsTxt: true,
 };

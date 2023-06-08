@@ -20,7 +20,7 @@ export const SEO = ({ title, description, image, bigImage }: SEOProps) => {
       age,
     )} ${age} year old web developer from Poland 🇵🇱. I'm currently studying at a High School, and enjoy making websites in React! I work as a Frontend Developer at AppUnite and also host Require Podcast.`;
 
-  const fullImage = image || "https://dudek.ga/me.jpg";
+  const fullImage = image || "https://dudek.sh/me.jpg";
 
   return (
     <Head>
@@ -31,19 +31,19 @@ export const SEO = ({ title, description, image, bigImage }: SEOProps) => {
       <meta name="description" content={fullDescription} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://dudek.ga/" />
+      <meta property="og:url" content="https://dudek.sh/" />
       <meta property="og:title" content={title || fullTitle} />
       <meta property="og:description" content={fullDescription} />
       <meta property="og:image" content={fullImage} />
 
       <meta property="twitter:card" content={bigImage ? "summary_large_image" : "summary"} />
-      <meta property="twitter:url" content="https://dudek.ga/" />
-      <meta property="twitter:domain" content="dudek.ga" />
+      <meta property="twitter:url" content="https://dudek.sh/" />
+      <meta property="twitter:domain" content="dudek.sh" />
       <meta property="twitter:title" content={title || fullTitle} />
       <meta property="twitter:description" content={fullDescription} />
       <meta property="twitter:image" content={fullImage} />
 
-      <meta property="og:site_name" content="dudek.ga" />
+      <meta property="og:site_name" content="dudek.sh" />
       <meta name="theme-color" content="#ffffff" />
 
       <meta name="robots" content="index, follow" />

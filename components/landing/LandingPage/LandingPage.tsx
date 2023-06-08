@@ -57,7 +57,7 @@ export const LandingPage = () => {
               <LinkedIn />
             </span>
           </a>
-          <a href="mailto:artur@dudek.ga" className={clsx(styles.link, styles.gh)}>
+          <a href="mailto:artur@dudek.sh" className={clsx(styles.link, styles.gh)}>
             <span data-visually-hidden>Send me an email!</span>
             <span aria-hidden="true">
               <At />

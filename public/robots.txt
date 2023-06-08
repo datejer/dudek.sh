@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://dudek.ga
+Host: https://dudek.sh
 
 # Sitemaps
-Sitemap: https://dudek.ga/sitemap.xml
+Sitemap: https://dudek.sh/sitemap.xml

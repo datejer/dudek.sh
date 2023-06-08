@@ -18,7 +18,7 @@ module.exports = {
       })),
       ...["/email", "/mail"].map((source) => ({
         source,
-        destination: "mailto:artur@dudek.ga",
+        destination: "mailto:artur@dudek.sh",
         permanent: true,
       })),
     ];

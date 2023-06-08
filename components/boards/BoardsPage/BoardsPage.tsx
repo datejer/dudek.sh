@@ -15,7 +15,7 @@ export const BoardsPage = () => {
       <SEO
         title="boards"
         description="keyboards i use."
-        image={`https://dudek.ga/keyboards/${boards[0].image}`}
+        image={`https://dudek.sh/keyboards/${boards[0].image}`}
       />
       <h1 className={styles.title}>keyboards i use.</h1>
 

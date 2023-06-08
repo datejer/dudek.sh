@@ -13,7 +13,7 @@ export const BoardInfoPage = ({ name, description, image, info, gallery }: Board
       <SEO
         title={name}
         description={description}
-        image={`https://dudek.ga/keyboards/${image}`}
+        image={`https://dudek.sh/keyboards/${image}`}
         bigImage
       />
       <div className={styles.cover}>

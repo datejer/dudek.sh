@@ -5,8 +5,8 @@
   ![Next.js](https://img.shields.io/badge/Next.js-%23000000?logo=next.js&logoColor=white)
   ![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6?logo=typescript&logoColor=white)
   ![SCSS](https://img.shields.io/badge/Sass-%23CC6699?logo=sass&logoColor=white)
-  ![Vercel](https://vercelbadge.vercel.app/api/datejer/dudek.ga)
-  ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdudek.ga)
+  ![Vercel](https://vercelbadge.vercel.app/api/datejer/dudek.sh)
+  ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdudek.sh)
   
   Hello 👋!
   
@@ -28,8 +28,8 @@
 ## develop.
 
 ```bash
-$ git clone https://github.com/datejer/dudek.ga.git
-$ cd dudek.ga
+$ git clone https://github.com/datejer/dudek.sh.git
+$ cd dudek.sh
 $ yarn
 $ yarn dev
 ```
@@ -56,9 +56,9 @@ $ yarn postbuild
 
 ## deploy.
 
-Deployed using ▲ Vercel at [dudek.ga](https://dudek.ga/)
+Deployed using ▲ Vercel at [dudek.sh](https://dudek.sh/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdatejer%2Fdudek.ga)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdatejer%2Fdudek.sh)
 
 ## special thanks.
 
