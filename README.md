@@ -10,7 +10,7 @@
   
   Hello 👋!
   
-  I'm a 16 year old web developer from Poland 🇵🇱. I'm currently studying at a High School, and enjoy making websites in React! I'm also the Host of Require Podcast.
+  I'm an 18 year old web developer from Poland 🇵🇱. I'm currently studying at a High School, and enjoy making websites in React! I'm also the Host of Require Podcast.
 </div>
 
 ## stuff i used.
