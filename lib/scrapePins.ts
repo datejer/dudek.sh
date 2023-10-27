@@ -27,7 +27,7 @@ const parsePins = (html: string, username: string) => {
   $(".js-pinned-items-reorder-list")
     .find(".pinned-item-list-item")
     .each((index, element) => {
-      const owner = $(element).find(".owner").text() || (username as string);
+      const owner = $(element).find(".owner").text().replace(/\//g, "") || (username as string);
       const repo = $(element).find(".repo").text() || "";
       const description = $(element).find(".pinned-item-desc").text().trim() || "";
       const language = $(element).find('[itemprop="programmingLanguage"]').text() || "";
