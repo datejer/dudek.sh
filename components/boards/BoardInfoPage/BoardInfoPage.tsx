@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { SEO } from "../../common/SEO";
 import type { Board } from "../../../pages/boards/[name]";
