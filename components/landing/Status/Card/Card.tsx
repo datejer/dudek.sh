@@ -1,5 +1,5 @@
 import { forwardRef, useEffect, useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Emoji, LanyardData } from "react-use-lanyard";
 import { getActivityName, getElapsedTime } from "../../../../lib/status";
 

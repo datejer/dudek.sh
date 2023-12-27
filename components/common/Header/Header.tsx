@@ -19,21 +19,19 @@ export const Header = () => {
       <nav className={styles.container}>
         <ul className={styles.list}>
           <li>
-            <Link href="/">
-              <a className={styles.button}>
-                <span data-visually-hidden>Main page</span>
-                <span aria-hidden="true">/</span>
-              </a>
+            <Link href="/" className={styles.button}>
+              <span data-visually-hidden>Main page</span>
+              <span aria-hidden="true">/</span>
             </Link>
           </li>
           <li>
-            <Link href="/stuff">
-              <a className={styles.button}>/stuff</a>
+            <Link href="/stuff" className={styles.button}>
+              /stuff
             </Link>
           </li>
           <li>
-            <Link href="/uses">
-              <a className={styles.button}>/uses</a>
+            <Link href="/uses" className={styles.button}>
+              /uses
             </Link>
           </li>
         </ul>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { SEO } from "../../common/SEO";
 import type { Board } from "../../../pages/boards/[name]";
@@ -24,13 +24,11 @@ export const BoardInfoPage = ({ name, description, image, info, gallery }: Board
           placeholder="blur"
         />
       </div>
-      <Link href="/boards">
-        <a className={styles.back}>
-          <span aria-hidden="true">
-            <ChevronLeft />
-          </span>
-          back to /boards
-        </a>
+      <Link href="/boards" className={styles.back}>
+        <span aria-hidden="true">
+          <ChevronLeft />
+        </span>
+        back to /boards
       </Link>
       <article className={styles.article}>
         <h1 className={styles.name}>{name}</h1>
