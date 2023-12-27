@@ -19,9 +19,7 @@ const Item = ({ item }: { item: UsesItem }) => {
 const ItemWithLink = ({ item }: { item: UsesItem }) => {
   return (
     <Link href={item.url || ""}>
-      <a>
-        <Item item={item} />
-      </a>
+      <Item item={item} />
     </Link>
   );
 };
