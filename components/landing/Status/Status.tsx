@@ -4,7 +4,7 @@ import Tippy from "@tippyjs/react";
 import { useTheme } from "next-themes";
 import { Card } from "./Card/Card";
 import { getStatusColor, getHumanStatus } from "../../../lib/status";
-import { useOutsideClick } from "../../../lib/useOutsideClick";
+import { useClickAway } from "react-use";
 
 import styles from "./Status.module.scss";
 
@@ -19,7 +19,11 @@ export const Status = () => {
   const handleCardOpen = () => setIsCardOpen(true);
   const handleCardClose = () => setIsCardOpen(false);
 
-  useOutsideClick(cardRef, isCardOpen, handleCardClose);
+  useClickAway(cardRef, () => {
+    if (isCardOpen) {
+      handleCardClose();
+    }
+  });
 
   if (lanyard.isValidating || lanyard.error || lanyard.data?.error || !lanyard.data?.success) {
     return (
