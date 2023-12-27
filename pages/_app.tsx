@@ -6,6 +6,7 @@ import "tippy.js/themes/light.css";
 import { AppProps } from "next/app";
 import { Layout } from "../components/common/Layout/Layout";
 import { useAprilFools } from "../lib/useAprilFools";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useAprilFools();
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider defaultTheme="dark">
       <Layout>
         <Component {...pageProps} />
+        <SpeedInsights />
       </Layout>
     </ThemeProvider>
   );
