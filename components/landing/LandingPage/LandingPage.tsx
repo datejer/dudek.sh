@@ -27,17 +27,17 @@ export const LandingPage = () => {
           <p className={styles.position}>frontend dev @ appunite</p>
           <p>
             Hello 👋! <br />
-            I'm {getIndefiniteArticle(age)} {age} year old web developer from Poland 🇵🇱. I'm
-            currently studying at a High School, and enjoy making websites in React! I work as a
-            Frontend Developer at{" "}
+            My name is Artur and I'm {getIndefiniteArticle(age)} {age} year old web developer from
+            Poland 🇵🇱. I&nbsp;mostly code in TypeScript and React but I've dabbled in just about
+            everything. I&nbsp;work as a Frontend Developer at{" "}
             <a href="https://appunite.com" data-textlink="true">
-              AppUnite
-            </a>{" "}
-            and also host{" "}
+              Appunite
+            </a>
+            . In my free time I host{" "}
             <a href="https://require.pl/" data-textlink="true">
               Require Podcast
-            </a>
-            .
+            </a>{" "}
+            together with my friend.
           </p>
           <a href="/github" className={clsx(styles.link, styles.gh)}>
             <span data-visually-hidden>My GitHub Profile</span>
