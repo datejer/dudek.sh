@@ -10,7 +10,7 @@
   
   Hello 👋!
   
-  I'm an 18 year old web developer from Poland 🇵🇱. I'm currently studying at a High School, and enjoy making websites in React! I'm also the Host of Require Podcast.
+  My name is Artur and I'm a web developer from Poland 🇵🇱. I mostly code in TypeScript/React, and work as a Frontend Developer at Appunite. In my free time I host Require Podcast together with my friend.
 </div>
 
 ## stuff i used.
