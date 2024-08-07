@@ -1752,6 +1752,11 @@ iterator.prototype@^1.1.2:
     reflect.getprototypeof "^1.0.4"
     set-function-name "^2.0.1"
 
+jotai@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.9.2.tgz#0b1036bc1672d02ea7cf73c6b01728de461d6ecf"
+  integrity sha512-jIBXEadOHCziOuMY6HAy2KQcHipGhnsbF+twqh8Lcmcz/Yei0gdBtW5mOYdKmbQxGqkvfvXM3w/oHtJ2WNGSFg==
+
 js-cookie@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"

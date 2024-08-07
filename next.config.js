@@ -41,6 +41,6 @@ module.exports = {
     ];
   },
   images: {
-    domains: ["cdn.discordapp.com", "i.scdn.co", "media.discordapp.net"],
+    domains: ["cdn.discordapp.com", "i.scdn.co", "media.discordapp.net", "cdn2.steamgriddb.com"],
   },
 };

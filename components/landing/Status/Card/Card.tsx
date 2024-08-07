@@ -6,7 +6,7 @@ import { getActivityName, getElapsedTime } from "../../../../lib/status";
 import styles from "./Card.module.scss";
 
 import Spotify from "../../../../assets/icons/logos/spotify.svg";
-import { Unknown } from "../../../../assets/icons/unknown";
+import { FallbackImage } from "./FallbackImage";
 
 const Timer = ({ start }: { start: number }) => {
   const [time, setTime] = useState<number | null>(null);
@@ -87,15 +87,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                       title={activity.assets?.large_text}
                     />
                   )}
-                  {!activity.assets?.large_image && (
-                    <Unknown
-                      alt={activity.name}
-                      width={60}
-                      height={60}
-                      className={styles.largeImage}
-                      title={activity.name}
-                    />
-                  )}
+                  {!activity.assets?.large_image && <FallbackImage gameName={activity.name} />}
                   <div className={styles.smallImageWrapper}>
                     {activity.assets?.small_image && (
                       <Image
