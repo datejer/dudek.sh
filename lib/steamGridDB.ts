@@ -22,7 +22,10 @@ export const fetchGameIcon = async (gameName: string) => {
       }),
     });
     const json = await response.json();
-    icon64URL = json.data.games[0].assets[0].extra_data["8"]["64"];
+    const anyFirstExtraDataEntry = Object.values(json.data.games[0].assets[0].extra_data)[0] as any;
+    const lastLargestIcon = Object.keys(anyFirstExtraDataEntry).reverse()[0];
+    const icon64orAnyLastLargestEntry = anyFirstExtraDataEntry["64"] ?? lastLargestIcon;
+    icon64URL = icon64orAnyLastLargestEntry;
   } catch (error) {
     console.error(error);
   }
