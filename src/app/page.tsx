@@ -1,26 +1,24 @@
 import Image from "next/legacy/image";
 import clsx from "clsx";
-import { SEO } from "../../common/SEO";
-import { Status } from "../Status/Status";
 
-import styles from "./LandingPage.module.scss";
+import styles from "./page.module.scss";
 
-import me from "../../../../public/me.jpg";
+import me from "@/../public/me.jpg";
 
-import thatsme from "../../../../public/thatsme.png";
-import thatsmeleft from "../../../../public/thatsmeleft.png";
-import { getCurrentAge, getIndefiniteArticle } from "../../../lib/age";
+import thatsme from "@/../public/thatsme.png";
+import thatsmeleft from "@/../public/thatsmeleft.png";
 import { GitHub } from "@/assets/icons/logos/GitHub";
 import { Twitter } from "@/assets/icons/logos/Twitter";
 import { LinkedIn } from "@/assets/icons/logos/LinkedIn";
 import { At } from "@/assets/icons/At";
+import { Status } from "@/components/landing/Status/Status";
+import { getCurrentAge, getIndefiniteArticle } from "@/lib/age";
 
-export const LandingPage = () => {
+export default function Page() {
   const age = getCurrentAge("2005-05-16");
 
   return (
     <div>
-      <SEO />
       <div className={styles.hero}>
         <div>
           <h1 className={styles.name}>artur dudek</h1>
@@ -104,4 +102,4 @@ export const LandingPage = () => {
       </div>
     </div>
   );
-};
+}

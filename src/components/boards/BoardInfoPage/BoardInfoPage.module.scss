@@ -60,7 +60,7 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    font-family: "IBM Plex Mono", serif;
+    font-family: var(--font-ibm-plex-mono);
     vertical-align: middle;
     transition: border 0.2s ease;
     transition: backdrop-filter 0.05s ease;
@@ -89,7 +89,7 @@
     z-index: 2;
 
     .name {
-      font-family: "IBM Plex Serif", serif;
+      font-family: var(--font-ibm-plex-serif);
       font-size: 3rem;
       line-height: 1em;
       font-weight: 600;
@@ -103,7 +103,7 @@
     .info {
       margin: 3rem 0;
       white-space: pre-wrap;
-      font-family: "IBM Plex Serif", serif;
+      font-family: var(--font-ibm-plex-serif);
       font-weight: 200;
       font-style: italic;
       font-size: 1.25rem;

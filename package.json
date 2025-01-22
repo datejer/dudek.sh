@@ -23,7 +23,8 @@
     "react-parallax-tilt": "^1.5.83",
     "react-use": "^17.4.2",
     "react-use-lanyard": "^0.1.2",
-    "sass": "^1.45.0"
+    "sass": "^1.45.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/node": "^17.0.13",
