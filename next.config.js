@@ -41,6 +41,31 @@ module.exports = {
     ];
   },
   images: {
-    domains: ["cdn.discordapp.com", "i.scdn.co", "media.discordapp.net", "cdn2.steamgriddb.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.discordapp.com",
+        port: "",
+        search: "",
+      },
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+        port: "",
+        search: "",
+      },
+      {
+        protocol: "https",
+        hostname: "media.discordapp.net",
+        port: "",
+        search: "",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn2.steamgriddb.com",
+        port: "",
+        search: "",
+      },
+    ],
   },
 };
