@@ -1,9 +1,8 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { ibm_plex_mono, ibm_plex_sans, ibm_plex_serif, norum_ipnum } from "@/app/fonts";
 import { Layout } from "@/components/common/Layout/Layout";
-import { useAprilFools } from "@/lib/useAprilFools";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import clsx from "clsx";
-import { ThemeProvider } from "next-themes";
 
 import "@/styles/globals.css";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -26,7 +25,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body>
         <Providers>
-          <Layout>{children}</Layout>
+          <Layout>
+            {children}
+            <SpeedInsights />
+          </Layout>
         </Providers>
       </body>
     </html>

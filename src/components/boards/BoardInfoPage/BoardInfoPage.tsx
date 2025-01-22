@@ -1,7 +1,7 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { SEO } from "@/components/common/SEO";
-import type { Board } from "@/pages/boards/[name]";
+import type { Board } from "@/_pages/boards/[name]";
 
 import styles from "./BoardInfoPage.module.scss";
 
