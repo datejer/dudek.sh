@@ -14,12 +14,12 @@ import { MongoDB } from "@/assets/icons/logos/MongoDB";
 import { PostgreSQL } from "@/assets/icons/logos/PostgreSQL";
 import { GraphQL } from "@/assets/icons/logos/GraphQL";
 import { ApolloGraphQL } from "@/assets/icons/logos/ApolloGraphQL";
-import { Discord } from "@/assets/icons/logos/Discord";
 import { Git } from "@/assets/icons/logos/Git";
 import { Yarn } from "@/assets/icons/logos/Yarn";
 import { Vercel } from "@/assets/icons/logos/Vercel";
 import { Netlify } from "@/assets/icons/logos/Netlify";
 import { Pug } from "@/assets/icons/logos/Pug";
+import { DiscordJS } from "@/assets/icons/logos/DiscordJS";
 
 export const Technologies = () => {
   return (
@@ -111,7 +111,7 @@ export const Technologies = () => {
       <a href="https://discord.js.org/" className={clsx(styles.tech, styles.discord)}>
         <span data-visually-hidden>Discord.js</span>
         <span aria-hidden="true">
-          <Discord />
+          <DiscordJS />
         </span>
       </a>
       <a href="https://git-scm.com/" className={clsx(styles.tech, styles.git)}>
