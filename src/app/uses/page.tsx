@@ -1,11 +1,13 @@
-import { SEO } from "../../common/SEO";
-import { UsesItem } from "../UsesItem/UsesItem";
+"use client";
 
-import styles from "./UsesPage.module.scss";
+import { SEO } from "../../components/common/SEO";
+import { UsesItem } from "../../components/uses/UsesItem/UsesItem";
 
-import uses from "../../../assets/data/uses.json";
+import styles from "./page.module.scss";
 
-export const UsesPage = () => {
+import uses from "../../assets/data/uses.json";
+
+export default function Page() {
   return (
     <div>
       <SEO title="uses" description="stuff i use." />
@@ -46,4 +48,4 @@ export const UsesPage = () => {
       </p>
     </div>
   );
-};
+}

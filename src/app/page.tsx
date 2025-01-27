@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/legacy/image";
 import clsx from "clsx";
 
@@ -13,6 +15,7 @@ import { LinkedIn } from "@/assets/icons/logos/LinkedIn";
 import { At } from "@/assets/icons/At";
 import { Status } from "@/components/landing/Status/Status";
 import { getCurrentAge, getIndefiniteArticle } from "@/lib/age";
+import { DiscordJS } from "@/assets/icons/logos/DiscordJS";
 
 export default function Page() {
   const age = getCurrentAge("2005-05-16");

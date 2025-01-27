@@ -1,4 +1,7 @@
+"use client";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import { ibm_plex_mono, ibm_plex_sans, ibm_plex_serif, norum_ipnum } from "@/app/fonts";
 import { Layout } from "@/components/common/Layout/Layout";
@@ -28,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Layout>
             {children}
             <SpeedInsights />
+            <Analytics />
           </Layout>
         </Providers>
       </body>
