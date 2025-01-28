@@ -1,5 +1,3 @@
-"use client";
-
 import clsx from "clsx";
 import { SEO } from "../../components/common/SEO";
 import { PinnedRepos } from "../../components/stuff/PinnedRepos/PinnedRepos";
@@ -8,11 +6,17 @@ import { Technologies } from "../../components/stuff/Technologies/Technologies";
 
 import styles from "./page.module.scss";
 import { Require } from "@/assets/icons/logos/Require";
+import { getMetadata } from "@/app/metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = getMetadata({
+  title: "stuff",
+  description: "stuff i made.",
+});
 
 export default function Page() {
   return (
     <div>
-      <SEO title="stuff" description="stuff i made." />
       <a href="https://require.pl">
         <div className={clsx(styles.project, styles.require)}>
           <div>

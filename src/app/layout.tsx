@@ -12,6 +12,11 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 import { Providers } from "@/app/providers";
+import { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

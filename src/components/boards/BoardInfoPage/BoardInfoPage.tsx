@@ -12,12 +12,6 @@ import { Board } from "@/app/boards/[name]/page";
 export const BoardInfoPage = ({ name, description, image, info, gallery }: Board) => {
   return (
     <div className={styles.wrapper}>
-      <SEO
-        title={name}
-        description={description}
-        image={`https://dudek.sh/keyboards/${image}`}
-        bigImage
-      />
       <div className={styles.cover}>
         <Image
           alt={`Photo of ${name}`}

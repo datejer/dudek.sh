@@ -1,16 +1,20 @@
-"use client";
-
 import { SEO } from "../../components/common/SEO";
 import { UsesItem } from "../../components/uses/UsesItem/UsesItem";
 
 import styles from "./page.module.scss";
 
 import uses from "../../assets/data/uses.json";
+import { getMetadata } from "@/app/metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = getMetadata({
+  title: "uses",
+  description: "stuff i use.",
+});
 
 export default function Page() {
   return (
     <div>
-      <SEO title="uses" description="stuff i use." />
       <h1 className={styles.title}>stuff i use.</h1>
       <p>
         Inspired by Wes Bos'{" "}
