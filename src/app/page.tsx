@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import clsx from "clsx";
 
 import styles from "./page.module.scss";
@@ -75,7 +75,6 @@ export default function Page() {
               height={128}
               priority
               placeholder="blur"
-              layout="fixed"
               className={styles.img}
             />
             <Status />
@@ -88,7 +87,6 @@ export default function Page() {
               height={105}
               priority
               placeholder="blur"
-              layout="fixed"
             />
           </div>
           <div className={styles.thatsmeleft}>
@@ -99,7 +97,6 @@ export default function Page() {
               height={111}
               priority
               placeholder="blur"
-              layout="fixed"
             />
           </div>
         </div>

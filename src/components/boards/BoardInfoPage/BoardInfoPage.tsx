@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { SEO } from "@/components/common/SEO";
 
@@ -18,6 +18,10 @@ export const BoardInfoPage = ({ name, description, image, info, gallery }: Board
           src={require(`@/../public/keyboards/${image}`)}
           quality={100}
           placeholder="blur"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
       <Link href="/boards" className={styles.back}>
@@ -45,6 +49,10 @@ export const BoardInfoPage = ({ name, description, image, info, gallery }: Board
                   quality={100}
                   placeholder="blur"
                   className={styles.photo}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
                 />
               </li>
             ))}

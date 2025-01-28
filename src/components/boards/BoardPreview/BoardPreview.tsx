@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 import styles from "./BoardPreview.module.scss";
@@ -18,11 +18,14 @@ export const BoardPreview = ({ title, description, image, url }: BoardPreview) =
           <Image
             alt={title}
             src={image}
-            layout="fill"
-            objectFit="cover"
             quality={100}
             placeholder="blur"
             className={styles.image}
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+            }}
           />
         </div>
         <div className={styles.summary}>
