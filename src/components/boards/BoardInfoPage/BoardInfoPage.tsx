@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { SEO } from "@/components/common/SEO";
 
 import styles from "./BoardInfoPage.module.scss";
 

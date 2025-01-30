@@ -1,4 +1,3 @@
-import { SEO } from "../../components/common/SEO";
 import { UsesItem } from "../../components/uses/UsesItem/UsesItem";
 
 import styles from "./page.module.scss";

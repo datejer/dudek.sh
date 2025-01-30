@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { SEO } from "../../components/common/SEO";
 import { PinnedRepos } from "../../components/stuff/PinnedRepos/PinnedRepos";
 import { Projects } from "../../components/stuff/Projects/Projects";
 import { Technologies } from "../../components/stuff/Technologies/Technologies";
