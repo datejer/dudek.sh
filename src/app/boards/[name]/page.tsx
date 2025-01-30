@@ -4,7 +4,7 @@ import { BoardInfoPage } from "@/components/boards/BoardInfoPage/BoardInfoPage";
 import { notFound } from "next/navigation";
 import { getMetadata } from "@/app/metadata";
 
-export type Board = typeof boards[number];
+export type Board = (typeof boards)[number];
 
 export async function generateStaticParams() {
   return boards.map(({ name }) => {
@@ -12,7 +12,8 @@ export async function generateStaticParams() {
   });
 }
 
-export async function generateMetadata({ params }: { params: { name: string } }) {
+export async function generateMetadata(props: { params: Promise<{ name: string }> }) {
+  const params = await props.params;
   const board = boards.find((board) => slugify(board.name) === params?.name);
 
   return getMetadata({
@@ -23,7 +24,8 @@ export async function generateMetadata({ params }: { params: { name: string } })
   });
 }
 
-export default function Page({ params }: { params: { name: string } }) {
+export default async function Page(props: { params: Promise<{ name: string }> }) {
+  const params = await props.params;
   const board = boards.find((board) => slugify(board.name) === params?.name);
 
   if (!board) {

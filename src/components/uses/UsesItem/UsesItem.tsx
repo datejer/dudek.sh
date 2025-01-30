@@ -24,7 +24,7 @@ const ItemWithLink = ({ item }: { item: UsesItem }) => {
   );
 };
 
-export type UsesItem = typeof uses.physical[number] & typeof uses.digital[number];
+export type UsesItem = (typeof uses.physical)[number] & (typeof uses.digital)[number];
 
 export const UsesItem = ({ item }: { item: UsesItem }) => {
   if (item.url) {

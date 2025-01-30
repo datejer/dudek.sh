@@ -1,5 +1,3 @@
-"use client";
-
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,8 +7,6 @@ import clsx from "clsx";
 
 import "@/styles/globals.css";
 import "react-loading-skeleton/dist/skeleton.css";
-import "tippy.js/dist/tippy.css";
-import "tippy.js/themes/light.css";
 import { Providers } from "@/app/providers";
 import { Viewport } from "next";
 
