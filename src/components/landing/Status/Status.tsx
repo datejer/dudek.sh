@@ -2,16 +2,14 @@
 
 import { createRef, useState } from "react";
 import { useLanyard } from "react-use-lanyard";
-import Tippy from "@tippyjs/react";
-import { useTheme } from "next-themes";
 import { Card } from "./Card/Card";
 import { getStatusColor, getHumanStatus } from "../../../lib/status";
 import { useClickAway } from "react-use";
 
 import styles from "./Status.module.scss";
+import { Tooltip } from "@/components/common/Tooltip/Tooltip";
 
 export const Status = () => {
-  const { theme } = useTheme();
   const lanyard = useLanyard({
     userId: "214651290234388480",
   });
@@ -41,19 +39,14 @@ export const Status = () => {
 
   return (
     <div className={styles.statusWrapper} onClick={handleCardOpen}>
-      <Tippy
-        theme={theme === "light" ? "dark" : "light"}
-        offset={[0, 0]}
-        className={styles.tooltip}
-        content={getHumanStatus(data.discord_status)}
-      >
+      <Tooltip delayDuration={100} content={getHumanStatus(data.discord_status)}>
         <div
           className={styles.status}
           style={{ backgroundColor: getStatusColor(data.discord_status) }}
         >
           <span data-visually-hidden>{getHumanStatus(data.discord_status)}</span>
         </div>
-      </Tippy>
+      </Tooltip>
       {isCardOpen ? <Card data={data} ref={cardRef} /> : null}
     </div>
   );
