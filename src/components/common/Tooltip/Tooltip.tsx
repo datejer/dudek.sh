@@ -2,7 +2,6 @@ import * as React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import styles from "./Tooltip.module.scss";
 
-// content props for destructuring, picked for Root props + children
 type TooltipProps = TooltipPrimitive.TooltipContentProps &
   Pick<TooltipPrimitive.TooltipProps, "open" | "defaultOpen" | "onOpenChange" | "delayDuration">;
 
