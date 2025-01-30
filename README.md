@@ -30,8 +30,8 @@
 ```bash
 $ git clone https://github.com/datejer/dudek.sh.git
 $ cd dudek.sh
-$ yarn
-$ yarn dev
+$ pnpm install
+$ pnpm dev
 ```
 
 ## lint.
@@ -39,19 +39,19 @@ $ yarn dev
 Using ESLint and Prettier.
 
 ```bash
-$ yarn lint
+$ pnpm lint
 ```
 
 ## build.
 
 ```bash
-$ yarn build
+$ pnpm build
 ```
 
 Additional `postbuild` script runs _automagically_ and uses `next-sitemap` to generate `sitemap.xml` and `robots.txt` files.
 
 ```bash
-$ yarn postbuild
+$ pnpm postbuild
 ```
 
 ## deploy.

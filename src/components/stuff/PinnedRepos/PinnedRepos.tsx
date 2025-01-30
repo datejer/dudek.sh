@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { useTheme } from "next-themes";
@@ -48,7 +50,7 @@ export const PinnedRepos = () => {
                         {repo.stars !== undefined ? (
                           repo.stars
                         ) : (
-                          <span className={styles.placeholderNumber}>
+                          <span className={styles.placeholderNumber} suppressHydrationWarning>
                             {Math.floor(Math.random() * MAX_PLACEHOLDER_NUM)}
                           </span>
                         )}
@@ -63,7 +65,7 @@ export const PinnedRepos = () => {
                         {repo.forks !== undefined ? (
                           repo.forks
                         ) : (
-                          <span className={styles.placeholderNumber}>
+                          <span className={styles.placeholderNumber} suppressHydrationWarning>
                             {Math.floor(Math.random() * MAX_PLACEHOLDER_NUM)}
                           </span>
                         )}

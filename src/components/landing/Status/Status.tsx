@@ -1,3 +1,5 @@
+"use client";
+
 import { createRef, useState } from "react";
 import { useLanyard } from "react-use-lanyard";
 import Tippy from "@tippyjs/react";

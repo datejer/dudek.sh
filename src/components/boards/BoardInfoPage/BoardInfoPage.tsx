@@ -1,27 +1,26 @@
-import Image from "next/legacy/image";
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
-import { SEO } from "@/components/common/SEO";
-import type { Board } from "@/pages/boards/[name]";
 
 import styles from "./BoardInfoPage.module.scss";
 
 import { ArrowLeft } from "@/assets/icons/ArrowLeft";
+import { Board } from "@/app/boards/[name]/page";
 
 export const BoardInfoPage = ({ name, description, image, info, gallery }: Board) => {
   return (
     <div className={styles.wrapper}>
-      <SEO
-        title={name}
-        description={description}
-        image={`https://dudek.sh/keyboards/${image}`}
-        bigImage
-      />
       <div className={styles.cover}>
         <Image
           alt={`Photo of ${name}`}
           src={require(`@/../public/keyboards/${image}`)}
           quality={100}
           placeholder="blur"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
       <Link href="/boards" className={styles.back}>
@@ -49,6 +48,10 @@ export const BoardInfoPage = ({ name, description, image, info, gallery }: Board
                   quality={100}
                   placeholder="blur"
                   className={styles.photo}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
                 />
               </li>
             ))}

@@ -29,7 +29,7 @@ export const FallbackImage = ({ gameName }: { gameName: string }) => {
     if (!icon) {
       fetchGameIcon();
     }
-  }, []);
+  }, [addFallbackIcon, gameName, icon]);
 
   if (!icon) {
     return (

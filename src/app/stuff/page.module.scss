@@ -2,7 +2,7 @@ $mobileSize: 725px;
 $mobileSize2: 400px;
 
 .title {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-ibm-plex-mono);
 }
 
 .project {
@@ -42,7 +42,7 @@ $mobileSize2: 400px;
 .projectName {
   margin: 0;
   font-size: 1.5rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-ibm-plex-mono);
 }
 
 .projectDesc {

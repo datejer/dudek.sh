@@ -1,5 +1,5 @@
 import { forwardRef, useEffect, useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Emoji, LanyardData } from "react-use-lanyard";
 import { getActivityName, getElapsedTime } from "../../../../lib/status";
 
@@ -39,6 +39,10 @@ const CustomEmoji = ({ emoji }: { emoji: Emoji }) => {
         width={22}
         height={22}
         title={emoji.name}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
       />
     );
   }
@@ -85,6 +89,10 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                       height={60}
                       className={styles.largeImage}
                       title={activity.assets?.large_text}
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto",
+                      }}
                     />
                   )}
                   {!activity.assets?.large_image && <FallbackImage gameName={activity.name} />}
@@ -97,6 +105,10 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                         height={20}
                         className={styles.smallImage}
                         title={activity.assets?.small_text}
+                        style={{
+                          maxWidth: "100%",
+                          height: "auto",
+                        }}
                       />
                     )}
                   </div>
@@ -130,6 +142,10 @@ const Card = forwardRef<HTMLDivElement, CardProps>(({ data }, ref) => {
                   height={60}
                   className={styles.largeImage}
                   title={data.spotify.album}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
                 />
               </div>
               <div className={styles.info}>

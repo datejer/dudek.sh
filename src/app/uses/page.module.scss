@@ -2,7 +2,7 @@ $mobileSize: 650px;
 $mobileSize2: 450px;
 
 .title {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-ibm-plex-mono);
 }
 
 .itemGrid {

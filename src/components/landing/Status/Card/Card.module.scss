@@ -58,7 +58,7 @@ $cardWidth: 300px;
     margin: 0 0 0.5rem 0;
     font-size: 0.75rem;
     text-transform: uppercase;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: var(--font-ibm-plex-mono);
     display: flex;
     align-items: center;
 
@@ -106,7 +106,7 @@ $cardWidth: 300px;
       flex: auto;
 
       .name {
-        font-family: "IBM Plex Mono", monospace;
+        font-family: var(--font-ibm-plex-mono);
         margin: 0;
       }
 

@@ -37,7 +37,7 @@ $mobileSize: 725px;
 .projectName {
   margin: 0;
   font-size: 1.125rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-ibm-plex-mono);
 }
 
 .projectDescription {

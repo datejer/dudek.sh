@@ -4,7 +4,7 @@ $mobileSize: 500px;
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-ibm-plex-mono);
   border: 2px solid transparent;
   transition: border 0.2s ease;
 
