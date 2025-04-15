@@ -12,3 +12,5 @@ export type BlogPost = {
   readingTime: string;
   frontmatter: BlogPostFrontmatter;
 };
+
+export type BlogPostPreview = Omit<BlogPost, "content">;
