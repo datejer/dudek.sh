@@ -6,10 +6,15 @@ type GetMetadataProps = {
   description?: string;
   image?: string;
   bigImage?: boolean;
+  openGraph?: {
+    type?: "website" | "article";
+    publishedTime?: string;
+    tags?: string[];
+  };
 };
 
 export const getMetadata = (props?: GetMetadataProps): Metadata => {
-  const { title, description, image, bigImage } = props || {};
+  const { title, description, image, bigImage, openGraph } = props || {};
 
   const fullTitle = title ? `${title} @ artur dudek.` : "artur dudek.";
 
@@ -28,7 +33,7 @@ export const getMetadata = (props?: GetMetadataProps): Metadata => {
     title: fullTitle,
     description: fullDescription,
     openGraph: {
-      type: "website",
+      type: openGraph?.type || "website",
       url: "https://dudek.sh/",
       siteName: "dudek.sh",
       title: title || fullTitle,
@@ -38,6 +43,8 @@ export const getMetadata = (props?: GetMetadataProps): Metadata => {
           url: fullImage,
         },
       ],
+      publishedTime: openGraph?.publishedTime,
+      tags: openGraph?.tags,
     },
     robots: {
       index: true,
