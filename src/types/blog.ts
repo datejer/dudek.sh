@@ -1,5 +1,6 @@
 export type BlogPostFrontmatter = {
   title: string;
+  // ISO 8601 date format
   date: string;
   description: string;
   tags?: string[];

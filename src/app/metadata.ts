@@ -6,15 +6,14 @@ type GetMetadataProps = {
   description?: string;
   image?: string;
   bigImage?: boolean;
-  openGraph?: {
-    type?: "website" | "article";
+  article?: {
     publishedTime?: string;
     tags?: string[];
   };
 };
 
 export const getMetadata = (props?: GetMetadataProps): Metadata => {
-  const { title, description, image, bigImage, openGraph } = props || {};
+  const { title, description, image, bigImage, article } = props || {};
 
   const fullTitle = title ? `${title} @ artur dudek.` : "artur dudek.";
 
@@ -32,8 +31,11 @@ export const getMetadata = (props?: GetMetadataProps): Metadata => {
   return {
     title: fullTitle,
     description: fullDescription,
+    authors: [{ name: "Artur Dudek", url: "https://dudek.sh" }],
+    creator: "Artur Dudek",
+    publisher: "Artur Dudek",
     openGraph: {
-      type: openGraph?.type || "website",
+      type: article ? "article" : "website",
       url: "https://dudek.sh/",
       siteName: "dudek.sh",
       title: title || fullTitle,
@@ -43,9 +45,14 @@ export const getMetadata = (props?: GetMetadataProps): Metadata => {
           url: fullImage,
         },
       ],
-      publishedTime: openGraph?.publishedTime,
-      tags: openGraph?.tags,
+      // og:article specific metadata
+      publishedTime: article?.publishedTime
+        ? new Date(article?.publishedTime).toISOString()
+        : undefined,
+      authors: article ? ["Artur Dudek"] : undefined,
+      tags: article ? article?.tags : undefined,
     },
+    keywords: article?.tags,
     robots: {
       index: true,
       follow: true,

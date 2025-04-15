@@ -32,8 +32,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return getMetadata({
     title: post.frontmatter.title,
     description: post.frontmatter.description,
-    openGraph: {
-      type: "article",
+    article: {
       publishedTime: post.frontmatter.date,
       tags: post.frontmatter.tags,
     },
