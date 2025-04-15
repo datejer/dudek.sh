@@ -1,8 +1,6 @@
 import Link from "next/link";
-
-import styles from "./UsesItem.module.scss";
-
 import uses from "../../../assets/data/uses.json";
+import styles from "./UsesItem.module.scss";
 
 const Item = ({ item }: { item: UsesItem }) => {
   return (

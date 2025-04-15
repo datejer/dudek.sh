@@ -1,5 +1,5 @@
-import { getCurrentAge, getIndefiniteArticle } from "@/lib/age";
 import { Metadata } from "next";
+import { getCurrentAge, getIndefiniteArticle } from "@/lib/age";
 
 type GetMetadataProps = {
   title?: string;

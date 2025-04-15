@@ -2,13 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import { Board } from "@/app/boards/[name]/page";
+import { ArrowLeft } from "@/assets/icons/ArrowLeft";
 import styles from "./BoardInfoPage.module.scss";
 
-import { ArrowLeft } from "@/assets/icons/ArrowLeft";
-import { Board } from "@/app/boards/[name]/page";
-
-export const BoardInfoPage = ({ name, description, image, info, gallery }: Board) => {
+export const BoardInfoPage = ({ name, image, info, gallery }: Board) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.cover}>

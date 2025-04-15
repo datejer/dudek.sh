@@ -1,12 +1,11 @@
+import { Metadata } from "next";
 import clsx from "clsx";
+import { getMetadata } from "@/app/metadata";
+import { Require } from "@/assets/icons/logos/Require";
 import { PinnedRepos } from "../../components/stuff/PinnedRepos/PinnedRepos";
 import { Projects } from "../../components/stuff/Projects/Projects";
 import { Technologies } from "../../components/stuff/Technologies/Technologies";
-
 import styles from "./page.module.scss";
-import { Require } from "@/assets/icons/logos/Require";
-import { getMetadata } from "@/app/metadata";
-import { Metadata } from "next";
 
 export const metadata: Metadata = getMetadata({
   title: "stuff",
@@ -21,7 +20,7 @@ export default function Page() {
           <div>
             <h2 className={styles.projectName}>Require Podcast</h2>
             <p className={styles.projectDesc}>
-              Polski podcast na temat JavaScriptu i nie tylko. "Na luzie" o technologiach
+              Polski podcast na temat JavaScriptu i nie tylko. &quot;Na luzie&quot; o technologiach
               frontendowych, przez nowości ze świata IT, po frameworki na backendzie!
             </p>
           </div>

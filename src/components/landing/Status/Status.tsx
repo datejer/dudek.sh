@@ -1,13 +1,12 @@
 "use client";
 
 import { createRef, useState } from "react";
-import { useLanyard } from "react-use-lanyard";
-import { Card } from "./Card/Card";
-import { getStatusColor, getHumanStatus } from "../../../lib/status";
 import { useClickAway } from "react-use";
-
-import styles from "./Status.module.scss";
+import { useLanyard } from "react-use-lanyard";
 import { Tooltip } from "@/components/common/Tooltip/Tooltip";
+import { getStatusColor, getHumanStatus } from "../../../lib/status";
+import { Card } from "./Card/Card";
+import styles from "./Status.module.scss";
 
 export const Status = () => {
   const lanyard = useLanyard({

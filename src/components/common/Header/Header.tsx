@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-
 import styles from "./Header.module.scss";
 
 export const Header = () => {

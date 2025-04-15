@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import { useTheme } from "next-themes";
 import Tilt from "react-parallax-tilt";
+import { useTheme } from "next-themes";
 import { usePinned } from "../../../lib/api";
-
 import styles from "./PinnedRepos.module.scss";
 
 const MAX_PLACEHOLDER_NUM = 100;

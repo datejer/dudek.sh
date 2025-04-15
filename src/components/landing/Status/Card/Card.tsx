@@ -1,12 +1,10 @@
-import { forwardRef, useEffect, useState } from "react";
 import Image from "next/image";
+import { forwardRef, useEffect, useState } from "react";
 import { Emoji, LanyardData } from "react-use-lanyard";
-import { getActivityName, getElapsedTime } from "../../../../lib/status";
-
-import styles from "./Card.module.scss";
-
-import { FallbackImage } from "./FallbackImage";
 import { Spotify } from "@/assets/icons/logos/Spotify";
+import { getActivityName, getElapsedTime } from "../../../../lib/status";
+import styles from "./Card.module.scss";
+import { FallbackImage } from "./FallbackImage";
 
 const Timer = ({ start }: { start: number }) => {
   const [time, setTime] = useState<number | null>(null);

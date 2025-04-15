@@ -1,9 +1,8 @@
-import { Activity } from "react-use-lanyard";
-import { Unknown, unknownBase64 } from "../../../../assets/icons/unknown";
-import styles from "./Card.module.scss";
-import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useFallbackIcons } from "../../../../store/fallbackIcons";
+import { useEffect, useState } from "react";
+import { Unknown, unknownBase64 } from "@/assets/icons/unknown";
+import { useFallbackIcons } from "@/store/fallbackIcons";
+import styles from "./Card.module.scss";
 
 export const FallbackImage = ({ gameName }: { gameName: string }) => {
   const { fallbackIcons, addFallbackIcon } = useFallbackIcons();
@@ -22,6 +21,7 @@ export const FallbackImage = ({ gameName }: { gameName: string }) => {
         addFallbackIcon(gameName, json.iconURL);
         setIcon(json.iconURL);
       } catch (error) {
+        // eslint-disable-next-line no-console
         console.error(error);
       }
     };

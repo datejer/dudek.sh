@@ -1,20 +1,17 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import clsx from "clsx";
-
-import styles from "./page.module.scss";
-
 import me from "@/../public/me.jpg";
-
 import thatsme from "@/../public/thatsme.png";
 import thatsmeleft from "@/../public/thatsmeleft.png";
-import { GitHub } from "@/assets/icons/logos/GitHub";
-import { Twitter } from "@/assets/icons/logos/Twitter";
-import { LinkedIn } from "@/assets/icons/logos/LinkedIn";
+import { getMetadata } from "@/app/metadata";
 import { At } from "@/assets/icons/At";
+import { GitHub } from "@/assets/icons/logos/GitHub";
+import { LinkedIn } from "@/assets/icons/logos/LinkedIn";
+import { Twitter } from "@/assets/icons/logos/Twitter";
 import { Status } from "@/components/landing/Status/Status";
 import { getCurrentAge, getIndefiniteArticle } from "@/lib/age";
-import { getMetadata } from "@/app/metadata";
-import { Metadata } from "next";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = getMetadata();
 
@@ -29,9 +26,9 @@ export default function Page() {
           <p className={styles.position}>frontend dev @ appunite</p>
           <p>
             Hello 👋! <br />
-            My name is Artur and I'm {getIndefiniteArticle(age)} {age} year old web developer from
-            Poland 🇵🇱. I&nbsp;mostly code in TypeScript and React but I've dabbled in just about
-            everything. I&nbsp;work as a Frontend Developer at{" "}
+            My name is Artur and I&apos;m {getIndefiniteArticle(age)} {age} year old web developer
+            from Poland 🇵🇱. I&nbsp;mostly code in TypeScript and React but I&apos;ve dabbled in just
+            about everything. I&nbsp;work as a Frontend Developer at{" "}
             <a href="https://appunite.com" data-textlink="true">
               Appunite
             </a>

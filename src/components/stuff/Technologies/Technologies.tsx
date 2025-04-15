@@ -1,25 +1,24 @@
 import clsx from "clsx";
-
-import styles from "./Technologies.module.scss";
-import { JavaScript } from "@/assets/icons/logos/JavaScript";
-import { TypeScript } from "@/assets/icons/logos/TypeScript";
-import { Node } from "@/assets/icons/logos/Node";
-import { React } from "@/assets/icons/logos/React";
-import { Next } from "@/assets/icons/logos/Next";
+import { ApolloGraphQL } from "@/assets/icons/logos/ApolloGraphQL";
+import { DiscordJS } from "@/assets/icons/logos/DiscordJS";
 import { Gatsby } from "@/assets/icons/logos/Gatsby";
-import { Vue } from "@/assets/icons/logos/Vue";
+import { Git } from "@/assets/icons/logos/Git";
+import { GraphQL } from "@/assets/icons/logos/GraphQL";
+import { JavaScript } from "@/assets/icons/logos/JavaScript";
+import { MongoDB } from "@/assets/icons/logos/MongoDB";
+import { Netlify } from "@/assets/icons/logos/Netlify";
+import { Next } from "@/assets/icons/logos/Next";
+import { Node } from "@/assets/icons/logos/Node";
+import { PostgreSQL } from "@/assets/icons/logos/PostgreSQL";
+import { Pug } from "@/assets/icons/logos/Pug";
+import { React } from "@/assets/icons/logos/React";
 import { Sass } from "@/assets/icons/logos/Sass";
 import { StyledComponents } from "@/assets/icons/logos/StyledComponents";
-import { MongoDB } from "@/assets/icons/logos/MongoDB";
-import { PostgreSQL } from "@/assets/icons/logos/PostgreSQL";
-import { GraphQL } from "@/assets/icons/logos/GraphQL";
-import { ApolloGraphQL } from "@/assets/icons/logos/ApolloGraphQL";
-import { Git } from "@/assets/icons/logos/Git";
-import { Yarn } from "@/assets/icons/logos/Yarn";
+import { TypeScript } from "@/assets/icons/logos/TypeScript";
 import { Vercel } from "@/assets/icons/logos/Vercel";
-import { Netlify } from "@/assets/icons/logos/Netlify";
-import { Pug } from "@/assets/icons/logos/Pug";
-import { DiscordJS } from "@/assets/icons/logos/DiscordJS";
+import { Vue } from "@/assets/icons/logos/Vue";
+import { Yarn } from "@/assets/icons/logos/Yarn";
+import styles from "./Technologies.module.scss";
 
 export const Technologies = () => {
   return (
