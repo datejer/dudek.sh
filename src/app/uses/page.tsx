@@ -1,10 +1,8 @@
-import { UsesItem } from "../../components/uses/UsesItem/UsesItem";
-
-import styles from "./page.module.scss";
-
-import uses from "../../assets/data/uses.json";
-import { getMetadata } from "@/app/metadata";
 import { Metadata } from "next";
+import { getMetadata } from "@/app/metadata";
+import uses from "../../assets/data/uses.json";
+import { UsesItem } from "../../components/uses/UsesItem/UsesItem";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = getMetadata({
   title: "uses",
@@ -16,7 +14,7 @@ export default function Page() {
     <div>
       <h1 className={styles.title}>stuff i use.</h1>
       <p>
-        Inspired by Wes Bos'{" "}
+        Inspired by Wes Bos&apos;{" "}
         <a href="https://uses.tech/" data-textlink="true">
           uses.tech
         </a>

@@ -1,8 +1,8 @@
-import boards from "@/assets/data/boards.json";
-import { slugify } from "@/lib/slugify";
-import { BoardInfoPage } from "@/components/boards/BoardInfoPage/BoardInfoPage";
 import { notFound } from "next/navigation";
 import { getMetadata } from "@/app/metadata";
+import boards from "@/assets/data/boards.json";
+import { BoardInfoPage } from "@/components/boards/BoardInfoPage/BoardInfoPage";
+import { slugify } from "@/lib/slugify";
 
 export type Board = (typeof boards)[number];
 

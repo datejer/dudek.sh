@@ -27,6 +27,7 @@ export const fetchGameIcon = async (gameName: string) => {
     const icon64orAnyLastLargestEntry = anyFirstExtraDataEntry["64"] ?? lastLargestIcon;
     icon64URL = icon64orAnyLastLargestEntry;
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error(error);
   }
 

@@ -1,11 +1,9 @@
-import { slugify } from "@/lib/slugify";
-import { BoardPreview } from "@/components/boards/BoardPreview/BoardPreview";
-
-import styles from "./page.module.scss";
-
-import boards from "@/assets/data/boards.json";
-import { getMetadata } from "@/app/metadata";
 import { Metadata } from "next";
+import { getMetadata } from "@/app/metadata";
+import boards from "@/assets/data/boards.json";
+import { BoardPreview } from "@/components/boards/BoardPreview/BoardPreview";
+import { slugify } from "@/lib/slugify";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = getMetadata({
   title: "boards",

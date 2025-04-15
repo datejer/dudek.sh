@@ -1,5 +1,5 @@
-import { fetchGameIcon } from "@/lib/steamGridDB";
 import { NextRequest, NextResponse } from "next/server";
+import { fetchGameIcon } from "@/lib/steamGridDB";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
         headers: { "Cache-Control": "public, s-maxage=1210000 stale-while-revalidate=2678400" },
       },
     );
-  } catch (e) {
+  } catch {
     return NextResponse.json({ message: "An error occured." }, { status: 500 });
   }
 }

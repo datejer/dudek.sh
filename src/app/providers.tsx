@@ -1,8 +1,8 @@
 "use client";
 
-import { useAprilFools } from "@/lib/useAprilFools";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
 import { ThemeProvider } from "next-themes";
+import { useAprilFools } from "@/lib/useAprilFools";
 
 export const Providers = ({ children }: { children: React.ReactNode }) => {
   useAprilFools();

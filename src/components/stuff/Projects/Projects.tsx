@@ -2,10 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
-
-import styles from "./Projects.module.scss";
-
 import projects from "../../../assets/data/projects.json";
+import styles from "./Projects.module.scss";
 
 export const Projects = () => {
   const [hasHover, setHasHover] = useState(true);

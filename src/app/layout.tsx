@@ -1,14 +1,12 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
-
-import { ibm_plex_mono, ibm_plex_sans, ibm_plex_serif, norum_ipnum } from "@/app/fonts";
-import { Layout } from "@/components/common/Layout/Layout";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import clsx from "clsx";
-
 import "@/styles/globals.css";
 import "react-loading-skeleton/dist/skeleton.css";
+import { ibm_plex_mono, ibm_plex_sans, ibm_plex_serif, norum_ipnum } from "@/app/fonts";
 import { Providers } from "@/app/providers";
-import { Viewport } from "next";
+import { Layout } from "@/components/common/Layout/Layout";
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
