@@ -18,7 +18,10 @@ const getPostFromFile = <T extends boolean>(
 
   return {
     slug,
-    readingTime: rt.text,
+    readingTime: {
+      text: rt.text,
+      ms: rt.time,
+    },
     frontmatter: data as BlogPostFrontmatter,
     ...(preview ? {} : { content }),
   } as T extends true ? BlogPostPreview : BlogPost;
@@ -41,6 +44,18 @@ export function getAllPosts(): BlogPostPreview[] {
     console.error("Error reading posts:", error);
     return [];
   }
+}
+
+export function getAllTags(posts: BlogPostPreview[]): string[] {
+  const tags = new Set<string>();
+
+  posts.forEach((post) => {
+    post.frontmatter.tags?.forEach((tag) => {
+      tags.add(tag);
+    });
+  });
+
+  return Array.from(tags);
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {

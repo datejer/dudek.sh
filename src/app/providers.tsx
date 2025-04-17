@@ -2,6 +2,7 @@
 
 import { TooltipProvider } from "@radix-ui/react-tooltip";
 import { ThemeProvider } from "next-themes";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { useAprilFools } from "@/lib/useAprilFools";
 
 export const Providers = ({ children }: { children: React.ReactNode }) => {
@@ -9,7 +10,9 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <ThemeProvider defaultTheme="dark">
-      <TooltipProvider>{children}</TooltipProvider>
+      <NuqsAdapter>
+        <TooltipProvider>{children}</TooltipProvider>
+      </NuqsAdapter>
     </ThemeProvider>
   );
 };

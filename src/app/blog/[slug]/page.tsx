@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { getMetadata } from "@/app/metadata";
-import { BlogLayout } from "@/components/blog/BlogLayout";
+import { PostLayout } from "@/components/blog/post/PostLayout/PostLayout";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 
 type BlogPostPageProps = {
@@ -52,9 +52,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   });
 
   return (
-    <BlogLayout frontmatter={post.frontmatter}>
-      <div>reading time: {post.readingTime}</div>
+    <PostLayout frontmatter={post.frontmatter} readingTime={post.readingTime}>
       {content}
-    </BlogLayout>
+    </PostLayout>
   );
 }

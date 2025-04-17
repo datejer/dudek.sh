@@ -1,0 +1,69 @@
+.card {
+  width: 100%;
+  border-left: 2px solid var(--button-border);
+  transition: border-color 100ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .summary {
+    font-family: var(--font-ibm-plex-sans);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    z-index: 1;
+    gap: 0.5rem;
+
+    * {
+      z-index: 1;
+    }
+
+    .title {
+      font-family: var(--font-ibm-plex-serif);
+      font-size: 1.5rem;
+      color: var(--foreground);
+      margin: 0;
+    }
+
+    .extraInfo {
+      display: flex;
+      flex-direction: row;
+
+      font-size: 0.875rem;
+      color: var(--foreground-secondary);
+      margin: 0;
+
+      .date,
+      .readingTime {
+        margin: 0;
+      }
+
+      .tags {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+
+        // ul reset
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+        list-style-type: none;
+      }
+    }
+
+    .description {
+      font-size: 1rem;
+      color: var(--foreground);
+      margin: 0;
+
+      // white-space: nowrap;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+    }
+  }
+
+  &:hover {
+    border-color: var(--foreground);
+  }
+}
