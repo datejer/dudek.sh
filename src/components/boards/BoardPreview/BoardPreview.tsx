@@ -2,14 +2,14 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import styles from "./BoardPreview.module.scss";
 
-type BoardPreview = {
+type BoardPreviewProps = {
   title: string;
   description: string;
   image: StaticImageData;
   url: string;
 };
 
-export const BoardPreview = ({ title, description, image, url }: BoardPreview) => {
+export const BoardPreview = ({ title, description, image, url }: BoardPreviewProps) => {
   return (
     <Link href={url}>
       <div className={styles.board}>

@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import styles from "./Header.module.scss";
 
+const NAV_LINKS = ["/stuff", "/uses", "/blog"];
+
 export const Header = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -25,16 +27,13 @@ export const Header = () => {
               <span aria-hidden="true">/</span>
             </Link>
           </li>
-          <li>
-            <Link href="/stuff" className={styles.button}>
-              /stuff
-            </Link>
-          </li>
-          <li>
-            <Link href="/uses" className={styles.button}>
-              /uses
-            </Link>
-          </li>
+          {NAV_LINKS.map((link) => (
+            <li key={link}>
+              <Link href={link} className={styles.button}>
+                {link}
+              </Link>
+            </li>
+          ))}
         </ul>
         <ul className={styles.list}>
           <li>

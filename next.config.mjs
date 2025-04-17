@@ -1,4 +1,9 @@
-module.exports = {
+import createMDX from "@next/mdx";
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  turbopack: {},
   async redirects() {
     return [
       ...["/linkedin", "/li"].map((source) => ({
@@ -69,3 +74,12 @@ module.exports = {
     ],
   },
 };
+
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
+
+export default withMDX(nextConfig);
