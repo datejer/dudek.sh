@@ -1,7 +1,6 @@
 .card {
   width: 100%;
   border-left: 2px solid var(--button-border);
-  transition: border-color 100ms ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -56,10 +55,18 @@
       font-size: 1rem;
       color: var(--foreground);
       margin: 0;
+    }
 
-      // white-space: nowrap;
-      // overflow: hidden;
-      // text-overflow: ellipsis;
+    .readMoreWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: normal;
+
+      color: var(--foreground-secondary);
+    }
+
+    .readMore {
+      font-size: 0.875rem;
     }
   }
 
