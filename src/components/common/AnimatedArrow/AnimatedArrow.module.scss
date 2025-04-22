@@ -1,0 +1,37 @@
+.animatedArrow {
+  display: flex;
+  margin-left: 2px;
+  width: 0.75em;
+
+  .arrowIcon {
+    width: 100%;
+    margin-left: 3px;
+    overflow: visible;
+  }
+
+  .arrowHead {
+    transform: translateX(0);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .arrowBody {
+    opacity: 0;
+    transform: scaleX(1);
+    transition:
+      transform 0.1s ease-in-out,
+      opacity 0.1s ease-in-out;
+  }
+}
+
+// These classes need to be applied to a parent element
+// that will trigger the hover effect
+:global(.arrow-hover-trigger):hover {
+  .arrowHead {
+    transform: translateX(3px);
+  }
+
+  .arrowBody {
+    opacity: 1;
+    transform: scaleX(2);
+  }
+}

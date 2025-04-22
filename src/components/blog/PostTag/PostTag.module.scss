@@ -1,0 +1,40 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--foreground);
+  background-color: var(--button-border);
+  opacity: 0.5;
+
+  font-family: var(--font-ibm-plex-mono);
+  font-weight: 200;
+
+  margin: 0;
+
+  border-radius: 0.5rem;
+
+  height: 100%;
+}
+
+.tag.normal {
+  font-size: 1rem;
+  line-height: 1rem;
+
+  padding: 0.375rem 0.75rem;
+}
+
+.tag.compact {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+
+  padding: 0 0.5rem;
+}
+
+.tag.interactive {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
