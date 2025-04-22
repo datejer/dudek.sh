@@ -1,7 +1,7 @@
 "use client";
 
+import { useState } from "react";
 import clsx from "clsx";
-import { parseAsArrayOf, parseAsString, useQueryState } from "nuqs";
 import { PostCard } from "@/components/blog/index/PostCard/PostCard";
 import { PostTag } from "@/components/blog/PostTag/PostTag";
 import { BlogPostPreview } from "@/types/blog";
@@ -13,7 +13,7 @@ type PostListProps = {
 };
 
 export const PostList = ({ posts, tags }: PostListProps) => {
-  const [tagFilter, setTagFilter] = useQueryState("t", parseAsArrayOf(parseAsString));
+  const [tagFilter, setTagFilter] = useState<string[]>([]);
 
   const filteredPosts = posts.filter((post) => {
     if (!tagFilter || tagFilter.length === 0) return true;
