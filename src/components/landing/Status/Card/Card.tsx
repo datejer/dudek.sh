@@ -33,6 +33,7 @@ const CustomEmoji = ({ emoji }: { emoji: Emoji }) => {
         src={`https://cdn.discordapp.com/emojis/${emoji.id}.${
           emoji.animated ? "gif" : "webp"
         }?size=44&quality=lossless`}
+        unoptimized={emoji.animated}
         alt={emoji.name}
         width={22}
         height={22}

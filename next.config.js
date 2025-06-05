@@ -1,4 +1,7 @@
-module.exports = {
+// @ts-check
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   async redirects() {
     return [
       ...["/linkedin", "/li"].map((source) => ({
@@ -46,26 +49,28 @@ module.exports = {
         protocol: "https",
         hostname: "cdn.discordapp.com",
         port: "",
-        search: "",
+        pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "i.scdn.co",
         port: "",
-        search: "",
+        pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "media.discordapp.net",
         port: "",
-        search: "",
+        pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "cdn2.steamgriddb.com",
         port: "",
-        search: "",
+        pathname: "/**",
       },
     ],
   },
 };
+
+module.exports = nextConfig;
